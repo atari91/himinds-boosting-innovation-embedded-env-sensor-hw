@@ -1,8 +1,7 @@
 EESchema Schematic File Version 4
-LIBS:hm-env-sensor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
-$Descr A2 23386 16535
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "hm-env-sensor"
@@ -670,147 +669,45 @@ F1 54 95 14 9F EF 69 AF 2F E5 68 0C 80 4D C9 83 B8 C7 32 D7 FA 45 6F 95 BF E8 F3
 A0 10 71 07 00 85 88 3B 00 28 F4 2F 6E 0E 73 66 69 F5 31 42 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L hm-env-sensor-rescue:Fiducial-OLIMEX_OTHER-ESP32-DevKit-Lipo_Rev_A1-rescue FID3
-U 1 1 5E1BFBF2
-P 21700 1100
-F 0 "FID3" H 21828 1146 50  0000 L CNN
-F 1 "Fiducial" H 21828 1055 50  0000 L CNN
-F 2 "OLIMEX_Other-FP:Fiducial1x3" H 21410 1025 20  0001 C CNN
-F 3 "" V 21650 1100 60  0000 C CNN
-	1    21700 1100
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
-	22800 1400 22800 600 
-Text Notes 19400 900  0    200  Italic 40
+	16000 1350 16000 550 
+Text Notes 12600 850  0    200  Italic 40
 Fiducials:
 Wire Notes Line
-	22800 600  17800 600 
+	16000 550  11000 550 
 Wire Notes Line
-	17800 1400 22800 1400
+	11000 1350 16000 1350
 Wire Notes Line
-	17800 600  17800 1400
-Text Notes 2400 14050 0    60   ~ 0
+	11000 550  11000 1350
+Text Notes 3950 10100 0    60   ~ 0
 I2C ADDR: 0x55
-Text Notes 2700 12900 0    50   ~ 0
+Text Notes 4950 9200 0    50   ~ 0
 VDD is 1.8V\ngenerated internally
-Text Notes 1200 12450 0    100  ~ 0
+Text Notes 1150 7950 0    100  ~ 0
 BQ27441-G1 Fuel Gauge
 Wire Wire Line
-	2200 13050 2100 13050
+	2600 9500 2600 8650
+Connection ~ 2600 9500
 Wire Wire Line
-	2100 13050 2000 13050
+	2000 9600 2000 9500
 Wire Wire Line
-	2100 13050 2100 12950
-Connection ~ 2100 13050
-Text Label 2200 13050 0    10   ~ 0
-V_BATT
-Wire Wire Line
-	2100 13550 2100 13650
-Wire Wire Line
-	2200 13650 2100 13650
-Connection ~ 2100 13650
-Text Label 2200 13550 0    10   ~ 0
-GND
-Wire Wire Line
-	2200 13150 2100 13150
-Wire Wire Line
-	2100 13150 1500 13150
-Wire Wire Line
-	1500 13150 1500 13050
-Wire Wire Line
-	2100 13150 2100 13350
-Wire Wire Line
-	2100 13350 2200 13350
-Connection ~ 2100 13150
-Connection ~ 2100 13350
-Text Label 2200 13150 0    10   ~ 0
+	1800 9200 1800 9000
+Connection ~ 1800 9000
+Text Label 1700 9000 2    60   ~ 0
 BATTERY_IN
-Wire Wire Line
-	1900 13550 1900 13350
-Connection ~ 1900 13350
-Text Label 1800 13350 2    60   ~ 0
-BATTERY_IN
-$Comp
-L hm-env-sensor-rescue:BQ27441-G1-sparkfun-battery-babysitter-eagle-import-esp32-thing-rescue-esp32-thing-rescue-ESP32-DevKit-Lipo_Rev_A1-rescue U6
-U 1 1 455EE6D3
-P 2600 13350
-F 0 "U6" H 2300 13760 59  0000 L BNN
-F 1 "BQ27441-G1" H 2300 12940 59  0000 L TNN
-F 2 "sparkfun-battery-babysitter:PDSO-N12" H 2600 13350 50  0001 C CNN
-F 3 "" H 2600 13350 50  0001 C CNN
-F 4 "IC-13220" H 2600 13350 59  0001 L TNN "PROD_ID"
-	1    2600 13350
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:RESISTOR1206-sparkfun-battery-babysitter-eagle-import-esp32-thing-rescue-esp32-thing-rescue-ESP32-DevKit-Lipo_Rev_A1-rescue R15
-U 1 1 DBA9C89E
-P 1800 13050
-F 0 "R15" H 2050 13150 59  0000 R TNN
-F 1 "0.01/1%/R1206" H 2250 13000 59  0000 R TNN
-F 2 "OLIMEX_RLC-FP:R_1206_5MIL_DWS" H 1800 13050 50  0001 C CNN
-F 3 "" H 1800 13050 50  0001 C CNN
-F 4 "RES-13218" H 1800 13050 59  0001 L TNN "PROD_ID"
-	1    1800 13050
-	-1   0    0    1   
-$EndComp
 $Comp
 L hm-env-sensor-rescue:V_BATT-sparkfun-battery-babysitter-eagle-import-esp32-thing-rescue-esp32-thing-rescue-ESP32-DevKit-Lipo_Rev_A1-rescue #SUPPLY0101
 U 1 1 B162DFB5
-P 2100 12950
-F 0 "#SUPPLY0101" H 2100 12950 50  0001 C CNN
-F 1 "V_BATT" H 2060 13090 59  0000 L BNN
-F 2 "" H 2100 12950 50  0001 C CNN
-F 3 "" H 2100 12950 50  0001 C CNN
-	1    2100 12950
+P 2600 8650
+F 0 "#SUPPLY0101" H 2600 8650 50  0001 C CNN
+F 1 "V_BATT" H 2560 8790 59  0000 L BNN
+F 2 "" H 2600 8650 50  0001 C CNN
+F 3 "" H 2600 8650 50  0001 C CNN
+	1    2600 8650
 	1    0    0    -1  
 $EndComp
-$Comp
-L hm-env-sensor-rescue:1.0UF-16V-10%(0603)-sparkfun-battery-babysitter-eagle-import-esp32-thing-rescue-esp32-thing-rescue-ESP32-DevKit-Lipo_Rev_A1-rescue C8
-U 1 1 B9947190
-P 1900 13750
-F 0 "C8" H 1960 13865 59  0000 L BNN
-F 1 "1.0uF/16V/10%/Y5V/C0603" H 1960 13665 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 1900 13750 50  0001 C CNN
-F 3 "" H 1900 13750 50  0001 C CNN
-	1    1900 13750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	1900 13350 1800 13350
-Wire Wire Line
-	2200 13550 2100 13550
-Wire Wire Line
-	2100 13350 1900 13350
-Wire Wire Line
-	1500 13050 1600 13050
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR018
-U 1 1 580DBD62
-P 5400 6450
-F 0 "#PWR018" H 5400 6200 50  0001 C CNN
-F 1 "GND" H 5400 6300 50  0000 C CNN
-F 2 "" H 5400 6450 60  0000 C CNN
-F 3 "" H 5400 6450 60  0000 C CNN
-	1    5400 6450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:TESTPAD-OLIMEX_OTHER-ESP32-DevKit-Lipo_Rev_A1-rescue GND1
-U 1 1 580DBDA3
-P 5200 6450
-F 0 "GND1" H 5400 6450 50  0000 C CNN
-F 1 "TESTPAD" H 5100 6335 50  0001 L BNN
-F 2 "OLIMEX_Other-FP:TESTPAD_40-ROUND" H 4960 6375 20  0001 C CNN
-F 3 "" V 5200 6450 60  0000 C CNN
-F 4 "Value 1" H 5200 6450 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5200 6450 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5200 6450 60  0001 C CNN "Fieldname3"
-	1    5200 6450
-	-1   0    0    1   
-$EndComp
+	1800 9000 1700 9000
 $Comp
 L hm-env-sensor-rescue:PWR_FLAG-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #FLG02
 U 1 1 580DBEE4
@@ -845,20 +742,6 @@ F 3 "" H 5200 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C1
-U 1 1 580DC771
-P 2500 2950
-F 0 "C1" H 2500 3025 50  0000 L CNN
-F 1 "47uF/6.3V/20%/X5R/C0805" H 2500 2900 30  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0805_5MIL_DWS" H 2500 2950 60  0001 C CNN
-F 3 "" H 2500 2950 60  0000 C CNN
-F 4 "Value 1" H 2500 2950 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2500 2950 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2500 2950 60  0001 C CNN "Fieldname3"
-	1    2500 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L hm-env-sensor-rescue:+5V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR08
 U 1 1 580DD76C
 P 2500 1350
@@ -868,34 +751,6 @@ F 2 "" H 2500 1350 60  0000 C CNN
 F 3 "" H 2500 1350 60  0000 C CNN
 	1    2500 1350
 	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R2
-U 1 1 580DD9E6
-P 2200 3000
-F 0 "R2" H 2325 2950 50  0000 L CNN
-F 1 "2.2k/R0603" H 1600 2950 50  0000 L CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 2200 2930 30  0001 C CNN
-F 3 "" V 2200 3000 30  0000 C CNN
-F 4 "Value 1" H 2200 3000 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2200 3000 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2200 3000 60  0001 C CNN "Fieldname3"
-	1    2200 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:LED-OLIMEX_Diodes-ESP32-DevKit-Lipo_Rev_A1-rescue PWRLED1
-U 1 1 580DE2D7
-P 2200 2050
-F 0 "PWRLED1" H 2380 2170 50  0000 R CNN
-F 1 "LED/RED/0603" H 2500 1950 50  0000 R CNN
-F 2 "OLIMEX_LEDs-FP:LED_0603_KA" H 2200 2050 60  0001 C CNN
-F 3 "" H 2200 2050 60  0000 C CNN
-F 4 "Value 1" H 2200 2050 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2200 2050 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2200 2050 60  0001 C CNN "Fieldname3"
-	1    2200 2050
-	0    -1   -1   0   
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR03
@@ -930,195 +785,69 @@ F 3 "" H 5400 3450 60  0000 C CNN
 	1    5400 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L hm-env-sensor-rescue:SY8009AAAC(SOT23-5)-OLIMEX_IC-ESP32-DevKit-Lipo_Rev_A1-rescue U3
-U 1 1 580E129E
-P 6100 2750
-F 0 "U3" H 5990 3020 50  0000 C CNN
-F 1 "SY8089AAAC(SOT23-5)" H 6100 2500 39  0000 C CNN
-F 2 "OLIMEX_Regulators-FP:SOT-23-5" H 6130 2900 20  0001 C CNN
-F 3 "" H 6100 2750 60  0000 C CNN
-F 4 "Value 1" H 6100 2750 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 6100 2750 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 6100 2750 60  0001 C CNN "Fieldname3"
-	1    6100 2750
-	1    0    0    -1  
-$EndComp
 Text Notes 5900 3250 0    51   ~ 0
 Vout=0.6*(1+Ra/Rb)
-$Comp
-L hm-env-sensor-rescue:L-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue L1
-U 1 1 580E1FA3
-P 6800 2650
-F 0 "L1" H 6800 2849 50  0000 C CNN
-F 1 "2.2uH/1.5A/DCR<0.1R/CD32" H 6800 2766 35  0000 C CNN
-F 2 "OLIMEX_RLC-FP:CD32" H 6750 2650 60  0001 C CNN
-F 3 "" H 6750 2650 60  0000 C CNN
-F 4 "Value 1" H 6800 2650 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 6800 2650 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 6800 2650 60  0001 C CNN "Fieldname3"
-	1    6800 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R11
-U 1 1 580E2698
-P 6850 2750
-F 0 "R11" H 7030 2790 50  0000 C CNN
-F 1 "4.99k/1%/R0603" H 6850 2675 39  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 6850 2680 30  0001 C CNN
-F 3 "" V 6850 2750 30  0000 C CNN
-F 4 "Value 1" H 6850 2750 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 6850 2750 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 6850 2750 60  0001 C CNN "Fieldname3"
-	1    6850 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R12
-U 1 1 580E2CAB
-P 6850 2950
-F 0 "R12" H 7030 2990 50  0000 C CNN
-F 1 "1.1k/1%/R0603" H 6850 2875 39  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 6850 2880 30  0001 C CNN
-F 3 "" V 6850 2950 30  0000 C CNN
-F 4 "Value 1" H 6850 2950 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 6850 2950 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 6850 2950 60  0001 C CNN "Fieldname3"
-	1    6850 2950
-	1    0    0    -1  
-$EndComp
-Text Notes 6800 2790 0    51   ~ 0
+Text Notes 7500 2800 1    51   ~ 0
 Ra
-Text Notes 6800 2990 0    51   ~ 0
+Text Notes 7500 3050 3    51   ~ 0
 Rb
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR025
 U 1 1 580E3C89
-P 7600 3450
-F 0 "#PWR025" H 7600 3200 50  0001 C CNN
-F 1 "GND" H 7600 3310 50  0000 C CNN
-F 2 "" H 7600 3450 60  0000 C CNN
-F 3 "" H 7600 3450 60  0000 C CNN
-	1    7600 3450
+P 7750 3250
+F 0 "#PWR025" H 7750 3000 50  0001 C CNN
+F 1 "GND" H 7750 3110 50  0000 C CNN
+F 2 "" H 7750 3250 60  0000 C CNN
+F 3 "" H 7750 3250 60  0000 C CNN
+	1    7750 3250
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR023
 U 1 1 580E3CB9
-P 7300 3450
-F 0 "#PWR023" H 7300 3200 50  0001 C CNN
-F 1 "GND" H 7300 3310 50  0000 C CNN
-F 2 "" H 7300 3450 60  0000 C CNN
-F 3 "" H 7300 3450 60  0000 C CNN
-	1    7300 3450
+P 7450 3400
+F 0 "#PWR023" H 7450 3150 50  0001 C CNN
+F 1 "GND" H 7450 3260 50  0000 C CNN
+F 2 "" H 7450 3400 60  0000 C CNN
+F 3 "" H 7450 3400 60  0000 C CNN
+	1    7450 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR024
 U 1 1 580E51CA
-P 7600 2450
-F 0 "#PWR024" H 7600 2300 50  0001 C CNN
-F 1 "+3.3V" H 7600 2600 50  0000 C CNN
-F 2 "" H 7600 2450 60  0000 C CNN
-F 3 "" H 7600 2450 60  0000 C CNN
-	1    7600 2450
+P 7750 2250
+F 0 "#PWR024" H 7750 2100 50  0001 C CNN
+F 1 "+3.3V" H 7750 2400 50  0000 C CNN
+F 2 "" H 7750 2250 60  0000 C CNN
+F 3 "" H 7750 2250 60  0000 C CNN
+	1    7750 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:PWR_FLAG-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #FLG03
 U 1 1 580E51FE
-P 7300 2450
-F 0 "#FLG03" H 7300 2545 50  0001 C CNN
-F 1 "PWR_FLAG" H 7300 2650 50  0000 C CNN
-F 2 "" H 7300 2450 60  0000 C CNN
-F 3 "" H 7300 2450 60  0000 C CNN
-	1    7300 2450
+P 7450 2250
+F 0 "#FLG03" H 7450 2345 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 2450 50  0000 C CNN
+F 2 "" H 7450 2250 60  0000 C CNN
+F 3 "" H 7450 2250 60  0000 C CNN
+	1    7450 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR019
 U 1 1 580E5D08
-P 5700 3450
-F 0 "#PWR019" H 5700 3200 50  0001 C CNN
-F 1 "GND" H 5700 3300 50  0000 C CNN
-F 2 "" H 5700 3450 60  0000 C CNN
-F 3 "" H 5700 3450 60  0000 C CNN
-	1    5700 3450
+P 6100 2950
+F 0 "#PWR019" H 6100 2700 50  0001 C CNN
+F 1 "GND" H 6100 2800 50  0000 C CNN
+F 2 "" H 6100 2950 60  0000 C CNN
+F 3 "" H 6100 2950 60  0000 C CNN
+	1    6100 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 2800 1350 0    79   ~ 0
+Text Notes 1200 1200 0    79   ~ 0
 Power Supply
-$Comp
-L hm-env-sensor-rescue:D_Schottky-OLIMEX_Diodes-ESP32-DevKit-Lipo_Rev_A1-rescue D2
-U 1 1 581010C5
-P 5400 2000
-F 0 "D2" V 5446 1921 50  0000 R CNN
-F 1 "1N5822/SS34/SMA" V 5355 1921 50  0000 R CNN
-F 2 "OLIMEX_Diodes-FP:SMA-KA" H 5400 2000 60  0001 C CNN
-F 3 "" H 5400 2000 60  0000 C CNN
-F 4 "Value 1" H 5400 2000 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5400 2000 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5400 2000 60  0001 C CNN "Fieldname3"
-	1    5400 2000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:LED-OLIMEX_Diodes-ESP32-DevKit-Lipo_Rev_A1-rescue CHARGING1
-U 1 1 5810ABA2
-P 3000 2250
-F 0 "CHARGING1" H 3200 2375 50  0000 R CNN
-F 1 "LED/YELLOW/0603" H 3375 2150 50  0000 R CNN
-F 2 "OLIMEX_LEDs-FP:LED_0603_KA" H 3000 2250 60  0001 C CNN
-F 3 "" H 3000 2250 60  0000 C CNN
-F 4 "Value 1" H 3000 2250 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 3000 2250 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 3000 2250 60  0001 C CNN "Fieldname3"
-	1    3000 2250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R3
-U 1 1 5811C32F
-P 3650 2250
-F 0 "R3" H 3600 2350 50  0000 L CNN
-F 1 "2.2k/R0603" H 3450 2150 50  0000 L CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 3650 2180 30  0001 C CNN
-F 3 "" V 3650 2250 30  0000 C CNN
-F 4 "Value 1" H 3650 2250 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 3650 2250 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 3650 2250 60  0001 C CNN "Fieldname3"
-	1    3650 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:P-MOS+DIOD-OLIMEX_Transistors-ESP32-DevKit-Lipo_Rev_A1-rescue FET1
-U 1 1 5813E337
-P 5100 1950
-F 0 "FET1" H 4700 1950 60  0000 R CNN
-F 1 "WPM2015-3/TR" H 4900 2050 60  0000 R CNN
-F 2 "OLIMEX_Transistors-FP:SOT23" H 5100 1950 60  0001 C CNN
-F 3 "" H 5100 1950 60  0000 C CNN
-F 4 "Value 1" H 5100 1950 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5100 1950 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5100 1950 60  0001 C CNN "Fieldname3"
-	1    5100 1950
-	1    0    0    1   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:BAT_CON-OLIMEX_Connectors-ESP32-DevKit-Lipo_Rev_A1-rescue BAT1
-U 1 1 581425A7
-P 4900 3000
-F 0 "BAT1" H 4790 3210 60  0000 L CNN
-F 1 "DW02S" H 4760 2790 51  0000 L CNN
-F 2 "OLIMEX_Connectors-FP:LIPO_BAT-CON2DW02R" H 4900 3000 60  0001 C CNN
-F 3 "" H 4900 3000 60  0000 C CNN
-F 4 "Value 1" H 4900 3000 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 4900 3000 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 4900 3000 60  0001 C CNN "Fieldname3"
-	1    4900 3000
-	1    0    0    -1  
-$EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR016
 U 1 1 58142B69
@@ -1130,369 +859,45 @@ F 3 "" H 4700 3450 60  0000 C CNN
 	1    4700 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R5
-U 1 1 58144979
-P 4950 2450
-F 0 "R5" H 4950 2550 50  0000 C CNN
-F 1 "NA/R0603" H 4950 2350 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 4950 2380 30  0001 C CNN
-F 3 "" V 4950 2450 30  0000 C CNN
-F 4 "Value 1" H 4950 2450 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 4950 2450 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 4950 2450 60  0001 C CNN "Fieldname3"
-	1    4950 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR029
-U 1 1 58153B20
-P 9500 2450
-F 0 "#PWR029" H 9500 2200 50  0001 C CNN
-F 1 "GND" V 9505 2322 50  0000 R CNN
-F 2 "" H 9500 2450 60  0000 C CNN
-F 3 "" H 9500 2450 60  0000 C CNN
-	1    9500 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR030
-U 1 1 5815405B
-P 9500 2950
-F 0 "#PWR030" H 9500 2700 50  0001 C CNN
-F 1 "GND" V 9505 2822 50  0000 R CNN
-F 2 "" H 9500 2950 60  0000 C CNN
-F 3 "" H 9500 2950 60  0000 C CNN
-	1    9500 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR028
-U 1 1 581571AB
-P 8800 3050
-F 0 "#PWR028" H 8800 2900 50  0001 C CNN
-F 1 "+3.3V" H 8675 3200 50  0000 L CNN
-F 2 "" H 8800 3050 60  0000 C CNN
-F 3 "" H 8800 3050 60  0000 C CNN
-	1    8800 3050
-	1    0    0    -1  
-$EndComp
-Text Label 14100 3650 0    60   ~ 0
-GPIO13
-Text Label 14100 4250 0    60   ~ 0
-GPIO19
-Text Label 14100 4450 0    60   ~ 0
-GPIO22
-Text Label 14100 4350 0    60   ~ 0
-GPIO21
-Text Label 14100 4650 0    60   ~ 0
-GPIO25
-Text Label 14100 4750 0    60   ~ 0
-GPIO26
-Text Notes 10700 1750 0    79   ~ 0
-ESP-WROOM-32 MODULE 
-Text Label 14100 3350 0    60   ~ 0
-GPIO10/SD_DATA3
-Text Label 14100 2450 0    60   ~ 0
-GPIO1/U0TXD
-Text Label 14100 2650 0    60   ~ 0
-GPIO3/U0RXD
-Text Label 14100 4150 0    60   ~ 0
-GPIO18
-Text Label 14100 3450 0    60   ~ 0
-GPIO11/SD_CMD
-Text Label 14100 3250 0    60   ~ 0
-GPIO9/SD_DATA2
-Text Label 14100 3150 0    60   ~ 0
-GPIO8/SD_DATA1
-Text Label 14100 3050 0    60   ~ 0
-GPIO7/SD_DATA0
-Text Label 14100 2550 0    60   ~ 0
-GPIO2
-Text Label 14100 2350 0    60   ~ 0
-GPIO0
-Text Label 14100 2950 0    60   ~ 0
-GPIO6/SD_CLK
-Text Label 14100 3850 0    60   ~ 0
-GPIO15
-Text Label 14100 3950 0    60   ~ 0
-GPIO16
-Text Label 14100 4850 0    60   ~ 0
-GPIO27
-Text Label 14100 3750 0    60   ~ 0
-GPIO14
-Text Label 14100 4550 0    60   ~ 0
-GPIO23
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R13
-U 1 1 58292085
-P 9150 3150
-F 0 "R13" H 9150 3250 50  0000 C CNN
-F 1 "1k/R0603" H 9150 3050 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 9150 3080 30  0001 C CNN
-F 3 "" V 9150 3150 30  0000 C CNN
-F 4 "Value 1" H 9150 3150 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 9150 3150 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 9150 3150 60  0001 C CNN "Fieldname3"
-	1    9150 3150
-	1    0    0    -1  
-$EndComp
-Text Label 8700 3450 0    60   ~ 0
-ESP_EN
-Text Label 14100 5150 0    60   ~ 0
-GPI34
-Text Label 14100 4950 0    60   ~ 0
-GPIO32
-Text Label 14100 5050 0    60   ~ 0
-GPIO33
-Text Label 14100 4050 0    60   ~ 0
-GPIO17
-Text Label 14100 5250 0    60   ~ 0
-GPI35
-Text Label 14100 5450 0    60   ~ 0
-GPI39/SENSOR_VN
-Text Notes 1500 7950 0    79   ~ 0
-Extensions
-Text Notes 2700 1950 0    79   ~ 0
+Text Notes 3200 2500 0    79   ~ 0
 LiPo Charger
-$Comp
-L hm-env-sensor-rescue:CH340T(SSOP20W)-OLIMEX_IC-ESP32-DevKit-Lipo_Rev_A1-rescue U2
-U 1 1 58D41048
-P 4000 5250
-F 0 "U2" H 4000 5900 60  0000 C CNN
-F 1 "CH340T(SSOP20W)" H 4000 4550 60  0000 C CNN
-F 2 "OLIMEX_IC-FP:SSOP-20W" H 4000 4500 60  0001 C CNN
-F 3 "" H -700 -8450 60  0000 C CNN
-	1    4000 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:USB-MINI-OLIMEX_Connectors-ESP32-DevKit-Lipo_Rev_A1-rescue USB-UART1
-U 1 1 58D440A7
-P 1200 5350
-F 0 "USB-UART1" H 700 5950 60  0000 L CNN
-F 1 "MISB-SWMM-5B-LF(USB_MICRO)" H -200 4450 60  0000 L CNN
-F 2 "OLIMEX_Connectors-FP:USB-MICRO_MISB-SWMM-5B_LF" H 1378 5244 60  0001 L CNN
-F 3 "" H 1300 5350 60  0000 C CNN
-	1    1200 5350
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 1500 5450
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR01
-U 1 1 58D478C6
-P 1700 5950
-F 0 "#PWR01" H 1700 5700 50  0001 C CNN
-F 1 "GND" H 1700 5800 50  0000 C CNN
-F 2 "" H 1700 5950 60  0000 C CNN
-F 3 "" H 1700 5950 60  0000 C CNN
-	1    1700 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C4
-U 1 1 58D54432
-P 2600 4750
-F 0 "C4" V 2550 4525 50  0000 L CNN
-F 1 "22uF/6.3V/20%/X5R/C0603" V 2550 4800 25  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 2600 4750 60  0001 C CNN
-F 3 "" H 2600 4750 60  0000 C CNN
-F 4 "Value 1" H 2600 4750 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2600 4750 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2600 4750 60  0001 C CNN "Fieldname3"
-	1    2600 4750
-	0    1    1    0   
-$EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR07
 U 1 1 58D54438
-P 2300 5050
-F 0 "#PWR07" H 2300 4800 50  0001 C CNN
-F 1 "GND" V 2305 4877 50  0000 C CNN
-F 2 "" H 2300 5050 60  0000 C CNN
-F 3 "" H 2300 5050 60  0000 C CNN
-	1    2300 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C5
-U 1 1 58D603A7
-P 2600 4850
-F 0 "C5" V 2550 4625 50  0000 L CNN
-F 1 "100nF/50V/20%/Y5V/C0603" V 2550 4900 25  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 2600 4850 60  0001 C CNN
-F 3 "" H 2600 4850 60  0000 C CNN
-F 4 "Value 1" H 2600 4850 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2600 4850 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2600 4850 60  0001 C CNN "Fieldname3"
-	1    2600 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR05
-U 1 1 58D65D8C
-P 2300 4750
-F 0 "#PWR05" H 2300 4500 50  0001 C CNN
-F 1 "GND" V 2305 4577 50  0000 C CNN
-F 2 "" H 2300 4750 60  0000 C CNN
-F 3 "" H 2300 4750 60  0000 C CNN
-	1    2300 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR06
-U 1 1 58D6665C
-P 2300 4850
-F 0 "#PWR06" H 2300 4600 50  0001 C CNN
-F 1 "GND" V 2305 4677 50  0000 C CNN
-F 2 "" H 2300 4850 60  0000 C CNN
-F 3 "" H 2300 4850 60  0000 C CNN
-	1    2300 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C2
-U 1 1 58D7490C
-P 2500 5550
-F 0 "C2" V 2450 5325 50  0000 L CNN
-F 1 "27pF/50V/5%/C0G/C0603" V 2450 5600 25  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 2500 5550 60  0001 C CNN
-F 3 "" H 2500 5550 60  0000 C CNN
-F 4 "Value 1" H 2500 5550 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2500 5550 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2500 5550 60  0001 C CNN "Fieldname3"
-	1    2500 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C3
-U 1 1 58D751C0
-P 2500 5750
-F 0 "C3" V 2450 5525 50  0000 L CNN
-F 1 "27pF/50V/5%/C0G/C0603" V 2450 5800 25  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 2500 5750 60  0001 C CNN
-F 3 "" H 2500 5750 60  0000 C CNN
-F 4 "Value 1" H 2500 5750 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2500 5750 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2500 5750 60  0001 C CNN "Fieldname3"
-	1    2500 5750
-	0    1    1    0   
+P 4000 6550
+F 0 "#PWR07" H 4000 6300 50  0001 C CNN
+F 1 "GND" V 4005 6377 50  0000 C CNN
+F 2 "" H 4000 6550 60  0000 C CNN
+F 3 "" H 4000 6550 60  0000 C CNN
+	1    4000 6550
+	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR04
 U 1 1 58D76952
-P 2200 5950
-F 0 "#PWR04" H 2200 5700 50  0001 C CNN
-F 1 "GND" H 2200 5800 50  0000 C CNN
-F 2 "" H 2200 5950 60  0000 C CNN
-F 3 "" H 2200 5950 60  0000 C CNN
-	1    2200 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR013
-U 1 1 58D83D5F
-P 3400 4650
-F 0 "#PWR013" H 3400 4500 50  0001 C CNN
-F 1 "+3.3V" H 3400 4800 50  0000 C CNN
-F 2 "" H 3400 4650 60  0000 C CNN
-F 3 "" H 3400 4650 60  0000 C CNN
-	1    3400 4650
+P 2300 6050
+F 0 "#PWR04" H 2300 5800 50  0001 C CNN
+F 1 "GND" H 2300 5900 50  0000 C CNN
+F 2 "" H 2300 6050 60  0000 C CNN
+F 3 "" H 2300 6050 60  0000 C CNN
+	1    2300 6050
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR015
 U 1 1 58D85D63
-P 4600 5950
-F 0 "#PWR015" H 4600 5700 50  0001 C CNN
-F 1 "GND" H 4600 5800 50  0000 C CNN
-F 2 "" H 4600 5950 60  0000 C CNN
-F 3 "" H 4600 5950 60  0000 C CNN
-	1    4600 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R6
-U 1 1 58D5AF61
-P 5150 4750
-F 0 "R6" H 4900 4800 50  0000 C CNN
-F 1 "220R/R0603" H 5525 4800 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 5150 4680 30  0001 C CNN
-F 3 "" V 5150 4750 30  0000 C CNN
-F 4 "Value 1" H 5150 4750 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5150 4750 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5150 4750 60  0001 C CNN "Fieldname3"
-	1    5150 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R7
-U 1 1 58D5BB65
-P 5150 4850
-F 0 "R7" H 4900 4900 50  0000 C CNN
-F 1 "220R/R0603" H 5525 4900 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 5150 4780 30  0001 C CNN
-F 3 "" V 5150 4850 30  0000 C CNN
-F 4 "Value 1" H 5150 4850 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5150 4850 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5150 4850 60  0001 C CNN "Fieldname3"
-	1    5150 4850
+P 4500 6350
+F 0 "#PWR015" H 4500 6100 50  0001 C CNN
+F 1 "GND" H 4500 6200 50  0000 C CNN
+F 2 "" H 4500 6350 60  0000 C CNN
+F 3 "" H 4500 6350 60  0000 C CNN
+	1    4500 6350
 	1    0    0    -1  
 $EndComp
 Text Label 7100 4850 0    60   ~ 0
 GPIO1/U0TXD
 Text Label 7100 4750 0    60   ~ 0
 GPIO3/U0RXD
-$Comp
-L hm-env-sensor-rescue:Q_NPN_BEC-OLIMEX_Transistors-ESP32-DevKit-Lipo_Rev_A1-rescue Q2
-U 1 1 58D6B1BC
-P 5600 5250
-F 0 "Q2" H 5791 5296 50  0000 L CNN
-F 1 "BC817-40(SOT23)" H 5791 5205 40  0000 L CNN
-F 2 "OLIMEX_Transistors-FP:SOT23" H 5800 5350 29  0001 C CNN
-F 3 "" H 5600 5250 60  0000 C CNN
-	1    5600 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R8
-U 1 1 58D713EC
-P 5150 5250
-F 0 "R8" H 5150 5350 50  0000 C CNN
-F 1 "1k/R0603" H 5150 5150 39  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 5150 5180 30  0001 C CNN
-F 3 "" V 5150 5250 30  0000 C CNN
-F 4 "Value 1" H 5150 5250 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5150 5250 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5150 5250 60  0001 C CNN "Fieldname3"
-	1    5150 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:Q_NPN_BEC-OLIMEX_Transistors-ESP32-DevKit-Lipo_Rev_A1-rescue Q3
-U 1 1 58D74BC0
-P 5600 5950
-F 0 "Q3" H 5791 5904 50  0000 L CNN
-F 1 "BC817-40(SOT23)" H 5791 5995 40  0000 L CNN
-F 2 "OLIMEX_Transistors-FP:SOT23" H 5800 6050 29  0001 C CNN
-F 3 "" H 5600 5950 60  0000 C CNN
-	1    5600 5950
-	1    0    0    1   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R9
-U 1 1 58D74BC9
-P 5150 5950
-F 0 "R9" H 5150 6050 50  0000 C CNN
-F 1 "1k/R0603" H 5150 5850 39  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 5150 5880 30  0001 C CNN
-F 3 "" V 5150 5950 30  0000 C CNN
-F 4 "Value 1" H 5150 5950 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5150 5950 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5150 5950 60  0001 C CNN "Fieldname3"
-	1    5150 5950
-	1    0    0    -1  
-$EndComp
 Text Label 7100 4950 0    60   ~ 0
 ESP_EN
 Text Label 7100 6050 0    60   ~ 0
@@ -1533,147 +938,33 @@ Text Notes 7275 5750 0    60   ~ 0
 1
 Text Notes 7500 5750 0    60   ~ 0
 0
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R14
-U 1 1 58DC0F9B
-P 14250 2050
-F 0 "R14" H 14250 2150 50  0000 C CNN
-F 1 "NA/R0603" H 14250 1950 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 14250 1980 30  0001 C CNN
-F 3 "" V 14250 2050 30  0000 C CNN
-F 4 "Value 1" H 14250 2050 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 14250 2050 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 14250 2050 60  0001 C CNN "Fieldname3"
-	1    14250 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR031
-U 1 1 58DC2D7F
-P 14600 2050
-F 0 "#PWR031" H 14600 1900 50  0001 C CNN
-F 1 "+3.3V" V 14600 2150 50  0000 L CNN
-F 2 "" H 14600 2050 60  0000 C CNN
-F 3 "" H 14600 2050 60  0000 C CNN
-	1    14600 2050
-	0    1    1    0   
-$EndComp
 Text Label 7100 6650 0    60   ~ 0
 GPIO2
-Text Label 14100 2850 0    60   ~ 0
-GPIO5
-Text Label 14100 3550 0    60   ~ 0
-GPIO12
-Text Label 14100 5350 0    60   ~ 0
-GPI36/SENSOR_VP
-Text Label 14100 2750 0    60   ~ 0
-GPIO4
-NoConn ~ 4500 5150
-NoConn ~ 4500 5350
-NoConn ~ 4500 5450
-NoConn ~ 4500 5550
-NoConn ~ 4500 5750
+NoConn ~ 4400 5050
+NoConn ~ 4400 5150
+NoConn ~ 4400 5350
+NoConn ~ 4400 5250
 Text Notes 1500 6750 0    79   ~ 0
 USB to UART
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C6
-U 1 1 58E558F6
-P 5400 3050
-F 0 "C6" V 5325 3100 50  0000 L CNN
-F 1 "47uF/6.3V/20%/X5R/C0805" V 5525 2700 40  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0805_5MIL_DWS" H 5400 3050 60  0001 C CNN
-F 3 "" H 5400 3050 60  0000 C CNN
-F 4 "Value 1" H 5400 3050 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5400 3050 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5400 3050 60  0001 C CNN "Fieldname3"
-	1    5400 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R10
-U 1 1 58EB833E
-P 6050 6350
-F 0 "R10" H 6050 6250 50  0000 C CNN
-F 1 "220R/R0603" H 6050 6450 50  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" V 5980 6350 30  0001 C CNN
-F 3 "" H 6050 6350 30  0000 C CNN
-	1    6050 6350
-	1    0    0    1   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:BAT54C(SOT23-3)-OLIMEX_Diodes-ESP32-DevKit-Lipo_Rev_A1-rescue U4
-U 1 1 58F77BD8
-P 6700 6350
-F 0 "U4" V 6647 6478 60  0000 L CNN
-F 1 "BAT54C(SOT23-3)" V 6750 6500 60  0000 L CNN
-F 2 "OLIMEX_Diodes-FP:SOT23-3" H 6700 6350 60  0001 C CNN
-F 3 "" H 6700 6350 60  0001 C CNN
-	1    6700 6350
-	0    1    -1   0   
-$EndComp
-Text Label 5700 6650 0    60   ~ 0
-D_Com
 Wire Wire Line
 	2500 1350 2500 1550
 Wire Wire Line
-	2500 2750 2500 2850
-Wire Wire Line
-	2500 3450 2500 3150
-Wire Wire Line
 	7300 1550 7300 1450
 Wire Wire Line
-	5400 3150 5400 3450
+	5400 3200 5400 3450
 Wire Wire Line
-	5800 2750 5700 2750
+	7750 2250 7750 2450
 Wire Wire Line
-	5700 2750 5700 2650
-Connection ~ 5700 2650
+	7450 2250 7450 2450
+Connection ~ 7450 2450
+Connection ~ 7750 2450
 Wire Wire Line
-	5800 2850 5700 2850
-Wire Wire Line
-	5700 2850 5700 3450
-Wire Wire Line
-	6400 2650 6600 2650
-Wire Wire Line
-	6700 2750 6500 2750
-Wire Wire Line
-	6500 2750 6500 2850
-Wire Wire Line
-	6500 2950 6700 2950
-Wire Wire Line
-	6400 2850 6500 2850
-Connection ~ 6500 2850
-Wire Wire Line
-	7300 3450 7300 2950
-Wire Wire Line
-	7300 2950 7000 2950
-Wire Wire Line
-	7000 2650 7300 2650
-Wire Wire Line
-	7600 2450 7600 2650
-Wire Wire Line
-	7300 2450 7300 2650
-Connection ~ 7300 2650
-Connection ~ 7600 2650
-Wire Wire Line
-	7600 3150 7600 3450
-Wire Wire Line
-	7000 2750 7300 2750
-Wire Wire Line
-	7300 2750 7300 2650
+	7750 3000 7750 3250
 Wire Wire Line
 	5400 2150 5400 2450
 Wire Wire Line
 	5400 1550 5400 1850
 Connection ~ 2200 1550
-Wire Wire Line
-	2500 2250 2800 2250
-Wire Wire Line
-	3500 2250 3200 2250
-Wire Wire Line
-	5000 2250 5000 2150
-Wire Wire Line
-	5200 1700 5200 1550
 Connection ~ 5200 1550
 Wire Wire Line
 	4700 3450 4700 3050
@@ -1682,113 +973,23 @@ Wire Wire Line
 Wire Wire Line
 	4800 2450 4700 2450
 Wire Wire Line
-	5200 2150 5200 2450
-Wire Wire Line
 	5100 2450 5200 2450
 Connection ~ 5200 2450
 Wire Notes Line
 	900  950  900  3850
-Wire Wire Line
-	9500 2450 9600 2450
-Wire Wire Line
-	10000 2550 9600 2550
-Wire Wire Line
-	9600 2450 9600 2550
-Connection ~ 9600 2450
-Wire Wire Line
-	9600 2650 10000 2650
-Connection ~ 9600 2550
-Wire Wire Line
-	10000 2950 9500 2950
-Wire Notes Line
-	16000 950  16000 6250
 Wire Notes Line
 	900  3850 7900 3850
 Wire Notes Line
 	900  950  7900 950 
 Wire Notes Line
 	7900 950  7900 3850
-Wire Wire Line
-	13700 2350 13900 2350
-Wire Notes Line
-	16000 950  8300 950 
-Wire Notes Line
-	8300 950  8300 6250
-Wire Wire Line
-	9600 3450 8600 3450
-Wire Notes Line
-	7900 7350 900  7350
-Wire Notes Line
-	900  7350 900  11250
-Wire Notes Line
-	900  11250 7900 11250
-Wire Notes Line
-	7900 11250 7900 7350
-Wire Wire Line
-	9300 3150 9600 3150
-Wire Wire Line
-	9600 3150 9600 3450
-Connection ~ 9600 3150
 Connection ~ 5400 2450
 Wire Wire Line
-	1500 5250 3500 5250
+	2300 5350 2300 5550
 Wire Wire Line
-	1500 5350 3500 5350
+	4400 6050 4500 6050
 Wire Wire Line
-	1700 4850 1700 5550
-Wire Wire Line
-	1700 5550 1500 5550
-Wire Wire Line
-	1100 5750 1100 5850
-Wire Wire Line
-	1100 5850 1200 5850
-Connection ~ 1700 5850
-Wire Wire Line
-	1200 5750 1200 5850
-Connection ~ 1200 5850
-Wire Wire Line
-	1100 4950 1100 4850
-Wire Wire Line
-	1100 4850 1200 4850
-Connection ~ 1700 5550
-Wire Wire Line
-	1200 4950 1200 4850
-Connection ~ 1200 4850
-Wire Wire Line
-	2500 4750 2300 4750
-Wire Wire Line
-	2500 4850 2300 4850
-Wire Wire Line
-	2300 5050 3500 5050
-Wire Wire Line
-	2700 4850 3400 4850
-Connection ~ 3400 4750
-Wire Wire Line
-	2700 4750 3400 4750
-Wire Wire Line
-	2400 5550 2200 5550
-Wire Wire Line
-	2200 5550 2200 5650
-Wire Wire Line
-	2400 5750 2200 5750
-Connection ~ 2200 5750
-Wire Wire Line
-	3400 4650 3400 4750
-Connection ~ 3400 4850
-Wire Wire Line
-	4500 5650 4600 5650
-Wire Wire Line
-	4600 5650 4600 5950
-Wire Wire Line
-	4500 4750 5000 4750
-Wire Wire Line
-	4500 4850 5000 4850
-Wire Wire Line
-	4500 5250 4900 5250
-Wire Wire Line
-	4500 5050 4800 5050
-Wire Wire Line
-	5300 4750 8000 4750
+	4500 6050 4500 6350
 Wire Wire Line
 	5300 4850 8000 4850
 Wire Wire Line
@@ -1801,14 +1002,12 @@ Wire Wire Line
 	5700 5450 5700 5550
 Wire Wire Line
 	5700 5550 4800 5550
-Connection ~ 4800 5550
 Wire Wire Line
 	5700 5750 5700 5650
 Wire Wire Line
 	5700 5650 4900 5650
 Wire Wire Line
-	4900 5650 4900 5250
-Connection ~ 4900 5250
+	4900 5650 4900 5450
 Wire Wire Line
 	5700 5050 5700 4950
 Wire Wire Line
@@ -1831,13 +1030,6 @@ Wire Notes Line
 	7175 5350 7175 5775
 Wire Notes Line
 	7425 5350 7425 5775
-Wire Wire Line
-	14100 2050 13900 2050
-Wire Wire Line
-	13900 2050 13900 2350
-Connection ~ 13900 2350
-Wire Wire Line
-	14400 2050 14600 2050
 Wire Notes Line
 	900  4250 7900 4250
 Wire Notes Line
@@ -1847,191 +1039,56 @@ Wire Notes Line
 Wire Notes Line
 	7900 6950 7900 4250
 Wire Wire Line
-	8800 3050 8800 3150
-Wire Wire Line
-	8800 3150 9000 3150
-Wire Wire Line
 	6700 6050 8000 6050
-Wire Wire Line
-	5300 6650 6400 6650
-Wire Wire Line
-	4800 5050 4800 5550
-Wire Wire Line
-	2200 2250 2200 2850
 Wire Wire Line
 	2200 3450 2200 3150
 Wire Wire Line
 	5700 6150 5700 6350
 Wire Wire Line
-	6400 6650 6400 6350
-Wire Wire Line
-	6400 6350 6500 6350
-Wire Wire Line
-	6700 6050 6700 6150
-Wire Wire Line
-	6700 6550 6700 6650
-Wire Wire Line
 	6700 6650 8000 6650
 Wire Wire Line
-	5700 2650 5800 2650
+	7450 2450 7750 2450
 Wire Wire Line
-	6500 2850 6500 2950
-Wire Wire Line
-	7300 2650 7600 2650
-Wire Wire Line
-	7600 2650 7600 2950
-Wire Wire Line
-	2200 1550 2200 1850
+	7750 2450 7750 2700
 Wire Wire Line
 	5200 1550 5400 1550
 Wire Wire Line
-	4700 2250 5000 2250
-Wire Wire Line
 	5200 2450 5400 2450
-Wire Wire Line
-	9600 2450 10000 2450
-Wire Wire Line
-	9600 2550 9600 2650
-Wire Wire Line
-	9600 3150 10000 3150
-Wire Wire Line
-	1700 5850 1700 5950
-Wire Wire Line
-	1200 5850 1700 5850
-Wire Wire Line
-	1700 5550 1700 5850
-Wire Wire Line
-	1200 4850 1700 4850
-Wire Wire Line
-	3400 4750 3500 4750
-Wire Wire Line
-	3400 4750 3400 4850
-Wire Wire Line
-	2200 5750 2200 5950
-Wire Wire Line
-	3400 4850 3500 4850
 Wire Wire Line
 	4800 5550 4800 5950
 Wire Wire Line
 	4900 5250 5000 5250
-$Comp
-L hm-env-sensor-rescue:BL4054B-42TPRN(SOT23-5)-OLIMEX_IC-ESP32-DevKit-Lipo_Rev_A1-rescue U1
-U 1 1 5B9E4FC5
-P 3400 2950
-F 0 "U1" H 3400 3275 60  0000 C CNN
-F 1 "BL4054B-42TPRN(SOT23-5)" H 3400 2625 60  0000 C CNN
-F 2 "OLIMEX_IC-FP:SOT-23-5" H 3400 2950 60  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/BL4054B-42TPRN_C83783.pdf" H 3400 2950 60  0001 C CNN
-	1    3400 2950
-	1    0    0    -1  
-$EndComp
-Text Notes 2800 3425 0    50   ~ 0
+Text Notes 2400 4100 0    50   ~ 0
 IBAT = 1000/Rprog = 455mA
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R4
-U 1 1 5B9EAEB9
-P 4050 3150
-F 0 "R4" H 3850 3200 50  0000 C CNN
-F 1 "2.2k/R0603" H 4375 3200 39  0000 C CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 4050 3080 30  0001 C CNN
-F 3 "" V 4050 3150 30  0000 C CNN
-F 4 "Value 1" H 4050 3150 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 4050 3150 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 4050 3150 60  0001 C CNN "Fieldname3"
-	1    4050 3150
-	1    0    0    -1  
-$EndComp
-Text Notes 3975 3175 0    35   Italic 7
+Text Notes 2935 3150 3    35   Italic 7
 Rprog
-Wire Wire Line
-	3800 3150 3900 3150
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR014
 U 1 1 5BA73822
-P 4400 3450
-F 0 "#PWR014" H 4400 3200 50  0001 C CNN
-F 1 "GND" H 4400 3300 50  0000 C CNN
-F 2 "" H 4400 3450 60  0000 C CNN
-F 3 "" H 4400 3450 60  0000 C CNN
-	1    4400 3450
+P 2850 3450
+F 0 "#PWR014" H 2850 3200 50  0001 C CNN
+F 1 "GND" H 2850 3300 50  0000 C CNN
+F 2 "" H 2850 3450 60  0000 C CNN
+F 3 "" H 2850 3450 60  0000 C CNN
+	1    2850 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3450 4400 3150
+	2500 1550 4950 1550
 Wire Wire Line
-	4200 3150 4400 3150
-Wire Wire Line
-	3000 3150 2500 3150
-Connection ~ 2500 3150
-Wire Wire Line
-	2500 3150 2500 3050
-Wire Wire Line
-	3000 2750 2500 2750
-Wire Wire Line
-	2500 2250 2500 2750
-Connection ~ 2500 2750
-Wire Wire Line
-	3800 2250 4000 2250
-Wire Wire Line
-	4000 2250 4000 2950
-Wire Wire Line
-	4000 2950 3800 2950
-Wire Wire Line
-	2500 1550 5200 1550
-Wire Wire Line
-	2500 2250 2500 1550
-Connection ~ 2500 2250
+	2500 1850 2500 1550
+Connection ~ 2500 1850
 Connection ~ 2500 1550
 Wire Wire Line
 	2200 1550 2500 1550
 Wire Wire Line
-	3800 2750 4200 2750
-Wire Wire Line
-	4200 2750 4200 2250
-Wire Wire Line
-	4200 2250 4700 2250
-Connection ~ 4700 2250
-$Comp
-L hm-env-sensor-rescue:C-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue C7
-U 1 1 5C1AA338
-P 7600 3050
-F 0 "C7" V 7525 3100 50  0000 L CNN
-F 1 "47uF/6.3V/20%/X5R/C0805" V 7725 2700 40  0000 L CNN
-F 2 "OLIMEX_RLC-FP:C_0805_5MIL_DWS" H 7600 3050 60  0001 C CNN
-F 3 "" H 7600 3050 60  0000 C CNN
-F 4 "Value 1" H 7600 3050 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 7600 3050 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 7600 3050 60  0001 C CNN "Fieldname3"
-	1    7600 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13900 2350 15400 2350
-Wire Wire Line
-	5300 6450 5400 6450
+	4000 2250 4700 2250
 Wire Wire Line
 	5200 1550 5200 1450
 Wire Wire Line
-	5700 2650 5700 2450
+	5700 2450 5600 2450
 Wire Wire Line
-	5700 2450 5400 2450
-Wire Wire Line
-	5400 2450 5400 2950
-Wire Wire Line
-	1500 5150 1900 5150
-$Comp
-L hm-env-sensor-rescue:D_Schottky-OLIMEX_Diodes-ESP32-DevKit-Lipo_Rev_A1-rescue D1
-U 1 1 5CB7DF70
-P 1450 1550
-F 0 "D1" H 1450 1675 50  0000 C CNN
-F 1 "1N5822/SS34/SMA" H 1400 1425 50  0000 C CNN
-F 2 "OLIMEX_Diodes-FP:SMA-KA" H 1450 1682 60  0001 C CNN
-F 3 "" H 1450 1550 60  0000 C CNN
-	1    1450 1550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 1550 1100 1550
+	5400 2450 5400 2900
 Wire Wire Line
 	1900 1550 2200 1550
 Wire Wire Line
@@ -2049,23 +1106,7 @@ F 3 "" H 1900 3450 60  0000 C CNN
 	1    1900 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L hm-env-sensor-rescue:R-OLIMEX_RCL-ESP32-DevKit-Lipo_Rev_A1-rescue R1
-U 1 1 58DC1A49
-P 1900 3000
-F 0 "R1" H 2025 2950 50  0000 L CNN
-F 1 "10k/R0603" H 1325 2950 50  0000 L CNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 1900 2930 30  0001 C CNN
-F 3 "" V 1900 3000 30  0000 C CNN
-F 4 "Value 1" H 1900 3000 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 1900 3000 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 1900 3000 60  0001 C CNN "Fieldname3"
-	1    1900 3000
-	0    1    1    0   
-$EndComp
 Connection ~ 1900 1550
-Wire Wire Line
-	1900 5150 1900 4550
 Wire Wire Line
 	1900 4550 1100 4550
 Text Label 1300 4550 0    60   ~ 0
@@ -2077,555 +1118,30 @@ Wire Wire Line
 Text Label 1100 2850 1    60   ~ 0
 +5V_USB
 Wire Wire Line
-	6200 6350 6400 6350
-Connection ~ 6400 6350
-Wire Wire Line
 	5700 6350 5900 6350
-$Comp
-L hm-env-sensor-rescue:TESTPAD-OLIMEX_OTHER-ESP32-DevKit-Lipo_Rev_A1-rescue D_Com1
-U 1 1 5D6D4498
-P 5200 6650
-F 0 "D_Com1" H 5450 6650 50  0000 C CNN
-F 1 "TESTPAD" H 5100 6535 50  0001 L BNN
-F 2 "OLIMEX_Other-FP:TESTPAD_40-ROUND" H 4960 6575 20  0001 C CNN
-F 3 "" V 5200 6650 60  0000 C CNN
-F 4 "Value 1" H 5200 6650 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 5200 6650 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 5200 6650 60  0001 C CNN "Fieldname3"
-	1    5200 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:CON19-OLIMEX_Connectors-ESP32-DevKit-Lipo_Rev_A1-rescue EXT1
-U 1 1 5D73D8E8
-P 1400 9550
-F 0 "EXT1" H 1350 10500 60  0000 C CNN
-F 1 "HN1x19" H 1400 8400 60  0000 C CNN
-F 2 "OLIMEX_Connectors-FP:HN1x19" H 1400 9450 200 0001 C CNN
-F 3 "" H 1400 9450 200 0001 C CNN
-	1    1400 9550
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR027
-U 1 1 5815346C
-P 8800 2150
-F 0 "#PWR027" H 8800 2000 50  0001 C CNN
-F 1 "+3.3V" H 8800 2300 50  0000 C CNN
-F 2 "" H 8800 2150 60  0000 C CNN
-F 3 "" H 8800 2150 60  0000 C CNN
-	1    8800 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	10000 2350 8800 2350
-Wire Wire Line
-	8800 2350 8800 2150
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR012
-U 1 1 5D806D05
-P 2800 8550
-F 0 "#PWR012" H 2800 8400 50  0001 C CNN
-F 1 "+3.3V" H 2700 8700 50  0000 L CNN
-F 2 "" H 2800 8550 60  0000 C CNN
-F 3 "" H 2800 8550 60  0000 C CNN
-	1    2800 8550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 8550 2800 8750
-Wire Wire Line
-	2800 8750 1500 8750
-Text Label 1900 8850 0    60   ~ 0
-ESP_EN
-Wire Wire Line
-	3600 8850 1500 8850
-Text Label 1900 9050 0    60   ~ 0
-GPI39/SENSOR_VN
-Text Label 1900 8950 0    60   ~ 0
-GPI36/SENSOR_VP
-Wire Wire Line
-	1500 8950 3600 8950
-Wire Wire Line
-	1500 9050 3600 9050
-Text Label 1900 10150 0    60   ~ 0
-GPIO13
-Text Label 5500 9450 0    60   ~ 0
-GPIO19
-Text Label 5500 8950 0    60   ~ 0
-GPIO22
-Text Label 5500 9250 0    60   ~ 0
-GPIO21
-Text Label 1900 9550 0    60   ~ 0
-GPIO25
-Text Label 1900 9650 0    60   ~ 0
-GPIO26
-Text Label 1900 10350 0    60   ~ 0
-GPIO10/SD_DATA3
-Text Label 5500 9050 0    60   ~ 0
-GPIO1/U0TXD
-Text Label 5500 9150 0    60   ~ 0
-GPIO3/U0RXD
-Text Label 5500 9550 0    60   ~ 0
-GPIO18
-Text Label 1900 10450 0    60   ~ 0
-GPIO11/SD_CMD
-Text Label 1900 10250 0    60   ~ 0
-GPIO9/SD_DATA2
-Text Label 5500 10350 0    60   ~ 0
-GPIO8/SD_DATA1
-Text Label 5500 10450 0    60   ~ 0
-GPIO7/SD_DATA0
-Text Label 5500 10150 0    60   ~ 0
-GPIO2
-Text Label 5500 10050 0    60   ~ 0
-GPIO0
-Text Label 5500 10550 0    60   ~ 0
-GPIO6/SD_CLK
-Text Label 5500 10250 0    60   ~ 0
-GPIO15
-Text Label 5500 9850 0    60   ~ 0
-GPIO16
-Text Label 1900 9750 0    60   ~ 0
-GPIO27
-Text Label 1900 9850 0    60   ~ 0
-GPIO14
-Text Label 5500 8850 0    60   ~ 0
-GPIO23
-Text Label 1900 9150 0    60   ~ 0
-GPI34
-Text Label 1900 9350 0    60   ~ 0
-GPIO32
-Text Label 1900 9450 0    60   ~ 0
-GPIO33
-Text Label 5500 9750 0    60   ~ 0
-GPIO17
-Text Label 1900 9250 0    60   ~ 0
-GPI35
-Text Label 5500 9650 0    60   ~ 0
-GPIO5
-Text Label 1900 9950 0    60   ~ 0
-GPIO12
-Text Label 5500 9950 0    60   ~ 0
-GPIO4
-Wire Wire Line
-	5100 9850 7200 9850
-Wire Wire Line
-	5100 9450 7200 9450
-Wire Wire Line
-	5100 8950 7200 8950
-Wire Wire Line
-	5100 9250 7200 9250
-Wire Wire Line
-	1500 9550 3600 9550
-Wire Wire Line
-	1500 9650 3600 9650
-Wire Wire Line
-	1500 10350 3600 10350
-Wire Wire Line
-	5100 9050 7200 9050
-Wire Wire Line
-	5100 9150 7200 9150
-Wire Wire Line
-	5100 9550 7200 9550
-Wire Wire Line
-	1500 10450 3600 10450
-Wire Wire Line
-	1500 10250 3600 10250
-Wire Wire Line
-	5100 10350 7200 10350
-Wire Wire Line
-	5100 10450 7200 10450
-Wire Wire Line
-	5100 10150 7200 10150
-Wire Wire Line
-	5100 9950 7200 9950
-Wire Wire Line
-	5100 10550 7200 10550
-Wire Wire Line
-	7200 10250 5100 10250
-Wire Wire Line
-	5100 9650 7200 9650
-Wire Wire Line
-	1500 9750 3600 9750
-Wire Wire Line
-	1500 9950 3600 9950
-Wire Wire Line
-	1500 10150 3600 10150
-Wire Wire Line
-	1500 9850 3600 9850
-Wire Wire Line
-	5100 8850 7200 8850
-Wire Wire Line
-	1500 9150 3600 9150
-Wire Wire Line
-	1500 9250 3600 9250
-Wire Wire Line
-	1500 9350 3600 9350
-Wire Wire Line
-	1500 9450 3600 9450
-Wire Wire Line
-	5100 9750 7200 9750
-Wire Wire Line
-	5100 10050 7200 10050
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR010
-U 1 1 5D94F94E
-P 2700 10050
-F 0 "#PWR010" H 2700 9800 50  0001 C CNN
-F 1 "GND" V 2705 9922 50  0000 R CNN
-F 2 "" H 2700 10050 60  0000 C CNN
-F 3 "" H 2700 10050 60  0000 C CNN
-	1    2700 10050
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	2700 10050 1500 10050
-$Comp
-L hm-env-sensor-rescue:+5V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR011
-U 1 1 5DA290CF
-P 2700 10550
-F 0 "#PWR011" H 2700 10400 50  0001 C CNN
-F 1 "+5V" V 2700 10750 50  0000 C CNN
-F 2 "" H 2700 10550 60  0000 C CNN
-F 3 "" H 2700 10550 60  0000 C CNN
-	1    2700 10550
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2700 10550 1500 10550
-$Comp
-L hm-env-sensor-rescue:CON19-OLIMEX_Connectors-ESP32-DevKit-Lipo_Rev_A1-rescue EXT2
-U 1 1 5DAA0DE9
-P 5000 9550
-F 0 "EXT2" H 4950 10500 60  0000 C CNN
-F 1 "HN1x19" H 5000 8400 60  0000 C CNN
-F 2 "OLIMEX_Connectors-FP:HN1x19" H 5000 9450 200 0001 C CNN
-F 3 "" H 5000 9450 200 0001 C CNN
-	1    5000 9550
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR021
-U 1 1 5DBB64A9
-P 6300 9350
-F 0 "#PWR021" H 6300 9100 50  0001 C CNN
-F 1 "GND" V 6305 9222 50  0000 R CNN
-F 2 "" H 6300 9350 60  0000 C CNN
-F 3 "" H 6300 9350 60  0000 C CNN
-	1    6300 9350
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6300 9350 5100 9350
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR020
-U 1 1 5DC43C4B
-P 6300 8750
-F 0 "#PWR020" H 6300 8500 50  0001 C CNN
-F 1 "GND" V 6305 8622 50  0000 R CNN
-F 2 "" H 6300 8750 60  0000 C CNN
-F 3 "" H 6300 8750 60  0000 C CNN
-	1    6300 8750
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6300 8750 5100 8750
-Entry Wire Line
-	15400 2350 15500 2450
-Entry Wire Line
-	15400 2450 15500 2550
-Entry Wire Line
-	15400 2550 15500 2650
-Entry Wire Line
-	15400 2650 15500 2750
-Entry Wire Line
-	15400 2750 15500 2850
-Entry Wire Line
-	15400 2850 15500 2950
-Entry Wire Line
-	15400 2950 15500 3050
-Entry Wire Line
-	15400 3050 15500 3150
-Entry Wire Line
-	15400 3150 15500 3250
-Entry Wire Line
-	15400 3250 15500 3350
-Entry Wire Line
-	15400 3350 15500 3450
-Entry Wire Line
-	15400 3450 15500 3550
-Entry Wire Line
-	15400 3550 15500 3650
-Entry Wire Line
-	15400 3650 15500 3750
-Entry Wire Line
-	15400 3750 15500 3850
-Entry Wire Line
-	15400 3850 15500 3950
-Entry Wire Line
-	15400 3950 15500 4050
-Entry Wire Line
-	15400 4050 15500 4150
-Entry Wire Line
-	15400 4150 15500 4250
-Entry Wire Line
-	15400 4250 15500 4350
-Entry Wire Line
-	15400 4350 15500 4450
-Entry Wire Line
-	15400 4450 15500 4550
-Entry Wire Line
-	15400 4550 15500 4650
-Entry Wire Line
-	15400 4650 15500 4750
-Entry Wire Line
-	15400 4750 15500 4850
-Entry Wire Line
-	15400 4850 15500 4950
-Entry Wire Line
-	15400 4950 15500 5050
-Entry Wire Line
-	15400 5050 15500 5150
-Entry Wire Line
-	15400 5150 15500 5250
-Entry Wire Line
-	15400 5250 15500 5350
-Entry Wire Line
-	15400 5350 15500 5450
-Entry Wire Line
-	15400 5450 15500 5550
-Wire Bus Line
-	15500 5950 15400 6050
-Wire Bus Line
-	8100 7050 8000 7150
-Wire Bus Line
-	8000 7150 7400 7150
-Wire Bus Line
-	3800 7150 3700 7250
-Wire Bus Line
-	7300 7250 7400 7150
-Connection ~ 7400 7150
-Wire Bus Line
-	7400 7150 3800 7150
-Entry Wire Line
-	3700 8750 3600 8850
-Entry Wire Line
-	3700 8850 3600 8950
-Entry Wire Line
-	3700 8950 3600 9050
-Entry Wire Line
-	3700 9050 3600 9150
-Entry Wire Line
-	3700 9150 3600 9250
-Entry Wire Line
-	3700 9250 3600 9350
-Entry Wire Line
-	3700 9450 3600 9550
-Entry Wire Line
-	3700 9350 3600 9450
-Entry Wire Line
-	3700 9550 3600 9650
-Entry Wire Line
-	3700 9650 3600 9750
-Entry Wire Line
-	3700 9750 3600 9850
-Entry Wire Line
-	3700 9850 3600 9950
-Entry Wire Line
-	3700 10050 3600 10150
-Entry Wire Line
-	3700 10150 3600 10250
-Entry Wire Line
-	3700 10250 3600 10350
-Entry Wire Line
-	3700 10350 3600 10450
-Entry Wire Line
-	8000 4750 8100 4850
-Entry Wire Line
-	8000 4850 8100 4950
-Entry Wire Line
-	8000 4950 8100 5050
-Entry Wire Line
-	8000 6050 8100 6150
-Entry Wire Line
-	8000 6650 8100 6750
-Wire Bus Line
-	8100 2850 8200 2750
-Wire Bus Line
-	8500 5950 8600 6050
-Wire Bus Line
-	8600 6050 15400 6050
-Wire Bus Line
-	8400 2750 8500 2850
-Wire Bus Line
-	8200 2750 8400 2750
-Entry Wire Line
-	8500 3350 8600 3450
-$Comp
-L hm-env-sensor-rescue:Crystal_GND-OLIMEX_Devices-ESP32-DevKit-Lipo_Rev_A1-rescue Q1
-U 1 1 5B4A02CE
-P 3200 5650
-F 0 "Q1" V 3200 5725 50  0000 L CNN
-F 1 "Q12MHz/20pF/10ppm/4P/3.2x2.5mm" V 3400 4950 40  0000 L CNN
-F 2 "OLIMEX_Crystal-FP:TSX-3.2x2.5mm_GND(3)" V 3291 5733 60  0001 L CNN
-F 3 "" H 3200 5650 60  0000 C CNN
-	1    3200 5650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2600 5550 3200 5550
-Wire Wire Line
-	2600 5750 3200 5750
-Connection ~ 3200 5550
-Wire Wire Line
-	3200 5550 3500 5550
-Connection ~ 3200 5750
-Wire Wire Line
-	3200 5750 3500 5750
-Wire Wire Line
-	3100 5650 2200 5650
-Connection ~ 2200 5650
-Wire Wire Line
-	2200 5650 2200 5750
-Entry Wire Line
-	7300 8850 7200 8950
-Entry Wire Line
-	7300 8750 7200 8850
-Entry Wire Line
-	7300 8950 7200 9050
-Entry Wire Line
-	7300 9050 7200 9150
-Entry Wire Line
-	7300 9150 7200 9250
-Entry Wire Line
-	7300 9350 7200 9450
-Entry Wire Line
-	7300 9450 7200 9550
-Entry Wire Line
-	7300 9550 7200 9650
-Entry Wire Line
-	7300 9650 7200 9750
-Entry Wire Line
-	7300 9750 7200 9850
-Entry Wire Line
-	7300 9850 7200 9950
-Entry Wire Line
-	7300 9950 7200 10050
-Entry Wire Line
-	7300 10050 7200 10150
-Entry Wire Line
-	7300 10150 7200 10250
-Entry Wire Line
-	7300 10250 7200 10350
-Entry Wire Line
-	7300 10350 7200 10450
-Entry Wire Line
-	7300 10450 7200 10550
-Text Notes 13000 7650 0    79   ~ 0
+	3000 5550 2300 5550
+Connection ~ 2300 5550
+Text Notes 9200 8550 0    79   ~ 0
 Application button
-Text Label 13450 8000 0    60   ~ 0
-3.3V
 Wire Notes Line
 	12900 7450 12900 10850
-Wire Wire Line
-	11550 12500 11550 12800
-Wire Wire Line
-	11550 12800 12050 12800
-Wire Wire Line
-	11550 13600 11550 12800
-Connection ~ 11550 12800
-Wire Wire Line
-	12050 13200 11250 13200
-Wire Wire Line
-	11250 13200 11250 12500
-Wire Wire Line
-	12050 13000 11850 13000
-Wire Wire Line
-	11850 13000 11850 14000
-Wire Wire Line
-	11250 14000 11250 13900
-Wire Wire Line
-	11550 14000 11550 13900
-Text Label 14050 13200 0    50   ~ 0
-GPIO27
-Text Label 14050 13400 0    50   ~ 0
-GPIO26
-$Comp
-L hm-env-sensor-rescue:BME280-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue U7
-U 1 1 239FBF27
-P 12650 13100
-F 0 "U7" H 12250 13600 59  0000 L BNN
-F 1 "BME280" H 12250 12500 59  0000 L BNN
-F 2 "SparkFun_BME280_Breakout_v10:BME280_LGA" H 12650 13100 50  0001 C CNN
-F 3 "" H 12650 13100 50  0001 C CNN
-	1    12650 13100
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:0.1UF-25V-5%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue C10
-U 1 1 2B08E60C
-P 11250 13800
-F 0 "C10" H 11310 13915 59  0000 L BNN
-F 1 "100nF/50V/20%/Y5V/C0603" V 11400 12600 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 11250 13800 50  0001 C CNN
-F 3 "" H 11250 13800 50  0001 C CNN
-	1    11250 13800
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:0.1UF-25V-5%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue C11
-U 1 1 6A2D04C9
-P 11550 13800
-F 0 "C11" H 11610 13915 59  0000 L BNN
-F 1 "100nF/50V/20%/Y5V/C0603" V 11700 12600 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 11550 13800 50  0001 C CNN
-F 3 "" H 11550 13800 50  0001 C CNN
-	1    11550 13800
-	1    0    0    -1  
-$EndComp
-Text Label 16350 8200 0    60   ~ 0
+Text Label 11100 8750 0    60   ~ 0
 GPIO16
-Text Label 15400 8150 0    60   ~ 0
+Text Label 10500 8750 0    60   ~ 0
 GPIO15
 Wire Wire Line
-	15400 8650 15400 8150
-Wire Wire Line
-	15400 9250 15400 8950
-Wire Wire Line
-	15400 9950 15400 9650
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R22
-U 1 1 5D54C7B3
-P 15400 9450
-F 0 "R22" H 15250 9509 59  0000 L BNN
-F 1 "330/R0603" H 15250 9320 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 15400 9450 50  0001 C CNN
-F 3 "" H 15400 9450 50  0001 C CNN
-	1    15400 9450
-	0    -1   -1   0   
-$EndComp
+	10500 8850 10500 8750
 $Comp
 L power:GND #PWR0105
 U 1 1 5D54C7A9
-P 15400 9950
-F 0 "#PWR0105" H 15400 9700 50  0001 C CNN
-F 1 "GND" H 15405 9777 50  0000 C CNN
-F 2 "" H 15400 9950 50  0001 C CNN
-F 3 "" H 15400 9950 50  0001 C CNN
-	1    15400 9950
+P 10500 9550
+F 0 "#PWR0105" H 10500 9300 50  0001 C CNN
+F 1 "GND" H 10505 9377 50  0000 C CNN
+F 2 "" H 10500 9550 50  0001 C CNN
+F 3 "" H 10500 9550 50  0001 C CNN
+	1    10500 9550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 5D54C79F
-P 15400 8800
-F 0 "D4" V 15439 8682 50  0000 R CNN
-F 1 "LED/GREEN/0603" V 15348 8682 50  0000 R CNN
-F 2 "OLIMEX_LEDs-FP:LED_0603_KA" H 15400 8800 50  0001 C CNN
-F 3 "~" H 15400 8800 50  0001 C CNN
-	1    15400 8800
-	0    -1   -1   0   
 $EndComp
 Text Notes 15200 7650 0    79   ~ 0
 Application LEDs
@@ -2633,504 +1149,114 @@ Wire Notes Line
 	16550 7450 15050 7450
 Wire Notes Line
 	15050 7450 15050 10850
-Text Notes 12250 13900 0    60   ~ 0
+Text Notes 15850 14600 0    60   ~ 0
 I2C ADDR: 0x77 or 0x76
 Wire Notes Line
 	14400 7450 12900 7450
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R16
-U 1 1 5D6F5BFE
-P 3300 14200
-F 0 "R16" H 3150 14259 59  0000 L BNN
-F 1 "10k/R0603" H 3150 14070 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 3300 14200 50  0001 C CNN
-F 3 "" H 3300 14200 50  0001 C CNN
-	1    3300 14200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3300 13650 3300 14000
-Wire Wire Line
-	3100 13650 3300 13650
-Text Notes 9450 12050 0    79   ~ 0
+Text Notes 15300 12450 0    79   ~ 0
 BME280
-Wire Notes Line
-	9350 11850 9350 15250
-Text Notes 1000 12050 0    79   ~ 0
+Text Notes 1150 7750 0    79   ~ 0
 Fuel Gauge
-Wire Notes Line
-	2400 11850 900  11850
-Wire Notes Line
-	900  11850 900  15250
 Wire Wire Line
-	13150 8000 13950 8000
+	9300 9000 9300 8850
 Wire Wire Line
-	13150 8000 13150 8800
-$Comp
-L hm-env-sensor-rescue:SIDE_WTCM-TR(3x4)-OLIMEX_Buttons-ESP32-DevKit-Lipo_Rev_A1-rescue RST2
-U 1 1 5D3480CF
-P 13150 9000
-F 0 "RST2" V 13100 8700 60  0000 L CNN
-F 1 "IT-1185AU2-160G-G-TR" V 13200 7950 50  0000 L CNN
-F 2 "OLIMEX_Buttons-FP:IT1185AU2_V2" H 13149 9038 60  0001 C CNN
-F 3 "" H 13149 9038 60  0000 C CNN
-F 4 "Value 1" H 13150 9000 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 13150 9000 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 13150 9000 60  0001 C CNN "Fieldname3"
-	1    13150 9000
-	0    -1   1    0   
-$EndComp
-Wire Notes Line
-	10850 11850 9350 11850
-Wire Wire Line
-	13150 10350 13150 10500
-Wire Wire Line
-	13150 9600 13150 9950
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R26
-U 1 1 5D4BB4FD
-P 13150 10150
-F 0 "R26" H 13000 10209 59  0000 L BNN
-F 1 "10k/R0603" H 13000 10020 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 13150 10150 50  0001 C CNN
-F 3 "" H 13150 10150 50  0001 C CNN
-	1    13150 10150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13950 9600 13150 9600
-Text Label 13950 9600 0    50   ~ 0
+	9500 9500 9300 9500
+Text Label 9500 9500 0    50   ~ 0
 GPIO13
-Wire Wire Line
-	16350 10000 16350 9700
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R24
-U 1 1 5D573B5B
-P 16350 9500
-F 0 "R24" H 16200 9559 59  0000 L BNN
-F 1 "330/R0603" H 16200 9370 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 16350 9500 50  0001 C CNN
-F 3 "" H 16350 9500 50  0001 C CNN
-	1    16350 9500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5D573B51
-P 16350 10000
-F 0 "#PWR0103" H 16350 9750 50  0001 C CNN
-F 1 "GND" H 16355 9827 50  0000 C CNN
-F 2 "" H 16350 10000 50  0001 C CNN
-F 3 "" H 16350 10000 50  0001 C CNN
-	1    16350 10000
+P 11100 9550
+F 0 "#PWR0103" H 11100 9300 50  0001 C CNN
+F 1 "GND" H 11105 9377 50  0000 C CNN
+F 2 "" H 11100 9550 50  0001 C CNN
+F 3 "" H 11100 9550 50  0001 C CNN
+	1    11100 9550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D6
-U 1 1 5D573B47
-P 16350 8850
-F 0 "D6" V 16389 8732 50  0000 R CNN
-F 1 "LED/RED/0603" V 16298 8732 50  0000 R CNN
-F 2 "OLIMEX_LEDs-FP:LED_0603_KA" H 16350 8850 50  0001 C CNN
-F 3 "~" H 16350 8850 50  0001 C CNN
-	1    16350 8850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	16350 9300 16350 9000
-Wire Wire Line
-	16350 8700 16350 8200
-Wire Notes Line
-	8300 6250 16000 6250
-Text Label 10550 8450 0    50   ~ 0
+	11100 8850 11100 8750
+Text Label 8650 8850 0    50   ~ 0
 ESP_EN
 Wire Wire Line
-	9750 8450 10550 8450
-Wire Wire Line
-	9750 10450 9750 9650
-Wire Wire Line
-	9750 8450 9750 9250
-Wire Notes Line
-	10850 7450 9350 7450
-Wire Notes Line
-	9350 7450 9350 10850
-$Comp
-L hm-env-sensor-rescue:SIDE_WTCM-TR(3x4)-OLIMEX_Buttons-ESP32-DevKit-Lipo_Rev_A1-rescue RST3
-U 1 1 5D47ADFF
-P 9750 9450
-F 0 "RST3" V 9700 9150 60  0000 L CNN
-F 1 "IT-1185AU2-160G-G-TR" V 9800 8400 50  0000 L CNN
-F 2 "OLIMEX_Buttons-FP:IT1185AU2_V2" H 9749 9488 60  0001 C CNN
-F 3 "" H 9749 9488 60  0000 C CNN
-F 4 "Value 1" H 9750 9450 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 9750 9450 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 9750 9450 60  0001 C CNN "Fieldname3"
-	1    9750 9450
-	0    -1   1    0   
-$EndComp
+	8650 8850 8650 8950
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0101
 U 1 1 5D47AE09
-P 9750 10450
-F 0 "#PWR0101" H 9750 10200 50  0001 C CNN
-F 1 "GND" H 9750 10300 50  0000 C CNN
-F 2 "" H 9750 10450 60  0000 C CNN
-F 3 "" H 9750 10450 60  0000 C CNN
-	1    9750 10450
+P 8650 9350
+F 0 "#PWR0101" H 8650 9100 50  0001 C CNN
+F 1 "GND" H 8650 9200 50  0000 C CNN
+F 2 "" H 8650 9350 60  0000 C CNN
+F 3 "" H 8650 9350 60  0000 C CNN
+	1    8650 9350
 	1    0    0    -1  
 $EndComp
-Text Notes 9400 7650 0    79   ~ 0
+Text Notes 8350 8550 0    79   ~ 0
 Reset Button
-Wire Wire Line
-	13450 12800 13450 14000
-Wire Wire Line
-	13250 12800 13450 12800
-Wire Wire Line
-	13700 5450 15400 5450
-Wire Wire Line
-	13700 5350 15400 5350
-Wire Wire Line
-	13700 5250 15400 5250
-Wire Wire Line
-	13700 5150 15400 5150
-Wire Wire Line
-	13700 5050 15400 5050
-Wire Wire Line
-	13700 4950 15400 4950
-Wire Wire Line
-	13700 4650 15400 4650
-Wire Wire Line
-	13700 4550 15400 4550
-Wire Wire Line
-	13700 4450 15400 4450
-Wire Wire Line
-	13700 4350 15400 4350
-Wire Wire Line
-	13700 4250 15400 4250
-Wire Wire Line
-	13700 4150 15400 4150
-Wire Wire Line
-	13700 4050 15400 4050
-Wire Wire Line
-	13700 3950 15400 3950
-Wire Wire Line
-	15400 3850 13700 3850
-Wire Wire Line
-	13700 3750 15400 3750
-Wire Wire Line
-	13700 3650 15400 3650
-Wire Wire Line
-	13700 3550 15400 3550
-Wire Wire Line
-	13700 3450 15400 3450
-Wire Wire Line
-	13700 3350 15400 3350
-Wire Wire Line
-	13700 3250 15400 3250
-Wire Wire Line
-	13700 3150 15400 3150
-Wire Wire Line
-	13700 3050 15400 3050
-Wire Wire Line
-	13700 2950 15400 2950
-Wire Wire Line
-	13700 2850 15400 2850
-Wire Wire Line
-	13700 2750 15400 2750
-Wire Wire Line
-	13700 2650 15400 2650
-Wire Wire Line
-	13700 2550 15400 2550
-Wire Wire Line
-	13700 2450 15400 2450
-$Comp
-L hm-env-sensor-rescue:ESP-WROOM-32-OLIMEX_Cases-ESP32-DevKit-Lipo_Rev_A1-rescue U5
-U 1 1 5821F429
-P 11800 3850
-F 0 "U5" H 11800 5550 60  0000 C CNN
-F 1 "ESP-WROOM-32" H 11800 2050 60  0000 C CNN
-F 2 "OLIMEX_Cases-FP:ESP-WROOM-32_MODULE" H 10900 4050 60  0001 C CNN
-F 3 "" H 10900 4050 60  0001 C CNN
-F 4 "Value 1" H 11800 3850 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 11800 3850 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 11800 3850 60  0001 C CNN "Fieldname3"
-	1    11800 3850
-	1    0    0    -1  
-$EndComp
-Connection ~ 11250 13200
-Wire Wire Line
-	11250 13600 11250 13200
-Text Notes 9520 13430 0    59   ~ 0
+Text Notes 16050 13200 0    59   ~ 0
 SDO to ground \nwill set default I2C address
-Wire Wire Line
-	12050 13400 10850 13400
-Wire Wire Line
-	10850 14000 10850 13400
-Text Notes 950  13600 0    50   ~ 0
+Text Notes 850  9250 0    50   ~ 0
 BATTERY_IN goes to \nthe battery connector\nBAT1 pin 1 (+)
-Text Label 5400 13550 0    50   ~ 0
+Text Label 4700 9400 0    50   ~ 0
 GPIO21
-$Comp
-L hm-env-sensor-rescue:CAP0603-CAP-sparkfun-battery-babysitter-eagle-import-esp32-thing-rescue-esp32-thing-rescue-ESP32-DevKit-Lipo_Rev_A1-rescue C9
-U 1 1 C4D90C62
-P 3500 12600
-F 0 "C9" H 3560 12715 59  0000 L BNN
-F 1 "0.47uF/50V/20%/Y5V/C0603" H 3560 12515 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:C_0603_5MIL_DWS" H 3500 12600 50  0001 C CNN
-F 3 "" H 3500 12600 50  0001 C CNN
-F 4 "CAP-13216" H 3500 12600 59  0001 L TNN "PROD_ID"
-	1    3500 12600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3500 12500 3500 12200
-Wire Wire Line
-	3500 13050 3500 12800
-Wire Wire Line
-	3100 13050 3500 13050
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R21
-U 1 1 0EA5C81A
-P 13700 12750
-F 0 "R21" H 13550 12809 59  0000 L BNN
-F 1 "4.7k/R0603" H 13500 12600 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 13700 12750 50  0001 C CNN
-F 3 "" H 13700 12750 50  0001 C CNN
-	1    13700 12750
-	0    -1   -1   0   
-$EndComp
-Text Notes 5350 12150 0    40   ~ 0
-Pullup resistors to 3.3V for I2C bus
-Wire Wire Line
-	13700 4750 15400 4750
-Wire Wire Line
-	13700 4850 15400 4850
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R19
-U 1 1 5DFB8F54
-P 4450 12800
-F 0 "R19" H 4300 12859 59  0000 L BNN
-F 1 "4.7k/R0603" H 4300 12670 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 4450 12800 50  0001 C CNN
-F 3 "" H 4450 12800 50  0001 C CNN
-	1    4450 12800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R20
-U 1 1 5E011077
-P 5000 12800
-F 0 "R20" H 4850 12859 59  0000 L BNN
-F 1 "4.7k/R0603" H 4850 12670 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 5000 12800 50  0001 C CNN
-F 3 "" H 5000 12800 50  0001 C CNN
-	1    5000 12800
-	0    -1   -1   0   
-$EndComp
-Text Label 5400 13250 0    50   ~ 0
-GPIO27
-Wire Wire Line
-	4450 13000 4450 13250
-Wire Wire Line
-	4450 13250 5400 13250
-Wire Wire Line
-	4450 12600 4450 12150
-Wire Wire Line
-	4450 12150 5000 12150
-Wire Wire Line
-	5000 12600 5000 12150
-Connection ~ 5000 12150
-Wire Wire Line
-	5000 12150 5150 12150
-Text Label 5400 13350 0    50   ~ 0
-GPIO26
-Wire Wire Line
-	5000 13000 5000 13350
-Text Label 12100 8500 0    50   ~ 0
-ESP_EN
-Wire Wire Line
-	11300 8500 12100 8500
-Wire Wire Line
-	11300 10500 11300 9700
-Wire Wire Line
-	11300 8500 11300 9300
-$Comp
-L hm-env-sensor-rescue:SIDE_WTCM-TR(3x4)-OLIMEX_Buttons-ESP32-DevKit-Lipo_Rev_A1-rescue RST1
-U 1 1 5D6A530E
-P 11300 9500
-F 0 "RST1" V 11250 9200 60  0000 L CNN
-F 1 "IT-1185AU2-160G-G-TR" V 11350 8450 50  0000 L CNN
-F 2 "OLIMEX_Buttons-FP:IT1185AU2_V2" H 11299 9538 60  0001 C CNN
-F 3 "" H 11299 9538 60  0000 C CNN
-F 4 "Value 1" H 11300 9500 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 11300 9500 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 11300 9500 60  0001 C CNN "Fieldname3"
-	1    11300 9500
-	0    -1   1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR026
-U 1 1 5D6A5314
-P 11300 10500
-F 0 "#PWR026" H 11300 10250 50  0001 C CNN
-F 1 "GND" H 11300 10350 50  0000 C CNN
-F 2 "" H 11300 10500 60  0000 C CNN
-F 3 "" H 11300 10500 60  0000 C CNN
-	1    11300 10500
-	1    0    0    -1  
-$EndComp
-Text Notes 10170 8280 0    39   ~ 0
-Two reset button, we keep the original \nplacement of the reset button, and \nwe add a reset button that will be \naccessible via the ventilation holes in the enclosure.
-Wire Wire Line
-	5400 13350 5000 13350
-$Comp
-L hm-env-sensor-rescue:4.7KOHM-1_10W-1%(0603)-SparkFun_BME280_Breakout_v10-eagle-import-ESP32-DevKit-Lipo_Rev_A1-rescue R17
-U 1 1 5D88D0A3
-P 3900 12800
-F 0 "R17" H 3750 12859 59  0000 L BNN
-F 1 "4.7k/R0603" H 3750 12670 59  0000 L BNN
-F 2 "OLIMEX_RLC-FP:R_0603_5MIL_DWS" H 3900 12800 50  0001 C CNN
-F 3 "" H 3900 12800 50  0001 C CNN
-	1    3900 12800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3900 12600 3900 12150
-Wire Wire Line
-	3900 12150 4450 12150
-Connection ~ 4450 12150
-Wire Wire Line
-	3900 13000 3900 13550
-Wire Wire Line
-	3900 13550 5400 13550
-Wire Wire Line
-	3100 13250 4450 13250
-Connection ~ 4450 13250
-Wire Wire Line
-	3100 13350 5000 13350
-Connection ~ 5000 13350
-Wire Wire Line
-	3100 13550 3900 13550
-Connection ~ 3900 13550
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR032
 U 1 1 5D7FB4E0
-P 1900 14450
-F 0 "#PWR032" H 1900 14200 50  0001 C CNN
-F 1 "GND" H 1900 14300 50  0000 C CNN
-F 2 "" H 1900 14450 60  0000 C CNN
-F 3 "" H 1900 14450 60  0000 C CNN
-	1    1900 14450
+P 1800 10100
+F 0 "#PWR032" H 1800 9850 50  0001 C CNN
+F 1 "GND" H 1800 9950 50  0000 C CNN
+F 2 "" H 1800 10100 60  0000 C CNN
+F 3 "" H 1800 10100 60  0000 C CNN
+	1    1800 10100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 13850 1900 14450
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR033
 U 1 1 5D8170CB
-P 2100 14450
-F 0 "#PWR033" H 2100 14200 50  0001 C CNN
-F 1 "GND" H 2100 14300 50  0000 C CNN
-F 2 "" H 2100 14450 60  0000 C CNN
-F 3 "" H 2100 14450 60  0000 C CNN
-	1    2100 14450
+P 3650 10200
+F 0 "#PWR033" H 3650 9950 50  0001 C CNN
+F 1 "GND" H 3650 10050 50  0000 C CNN
+F 2 "" H 3650 10200 60  0000 C CNN
+F 3 "" H 3650 10200 60  0000 C CNN
+	1    3650 10200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 13650 2100 14450
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR034
 U 1 1 5D83225F
-P 3300 14450
-F 0 "#PWR034" H 3300 14200 50  0001 C CNN
-F 1 "GND" H 3300 14300 50  0000 C CNN
-F 2 "" H 3300 14450 60  0000 C CNN
-F 3 "" H 3300 14450 60  0000 C CNN
-	1    3300 14450
+P 2850 10250
+F 0 "#PWR034" H 2850 10000 50  0001 C CNN
+F 1 "GND" H 2850 10100 50  0000 C CNN
+F 2 "" H 2850 10250 60  0000 C CNN
+F 3 "" H 2850 10250 60  0000 C CNN
+	1    2850 10250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 14450 3300 14400
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR035
 U 1 1 5D84E123
-P 3500 12200
-F 0 "#PWR035" H 3500 11950 50  0001 C CNN
-F 1 "GND" H 3500 12050 50  0000 C CNN
-F 2 "" H 3500 12200 60  0000 C CNN
-F 3 "" H 3500 12200 60  0000 C CNN
-	1    3500 12200
+P 4850 8550
+F 0 "#PWR035" H 4850 8300 50  0001 C CNN
+F 1 "GND" H 4850 8400 50  0000 C CNN
+F 2 "" H 4850 8550 60  0000 C CNN
+F 3 "" H 4850 8550 60  0000 C CNN
+	1    4850 8550
 	-1   0    0    1   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR036
-U 1 1 5D84EDDB
-P 10850 14000
-F 0 "#PWR036" H 10850 13750 50  0001 C CNN
-F 1 "GND" H 10850 13850 50  0000 C CNN
-F 2 "" H 10850 14000 60  0000 C CNN
-F 3 "" H 10850 14000 60  0000 C CNN
-	1    10850 14000
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR037
-U 1 1 5D852EB9
-P 11250 14000
-F 0 "#PWR037" H 11250 13750 50  0001 C CNN
-F 1 "GND" H 11250 13850 50  0000 C CNN
-F 2 "" H 11250 14000 60  0000 C CNN
-F 3 "" H 11250 14000 60  0000 C CNN
-	1    11250 14000
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR038
-U 1 1 5D85327E
-P 11550 14000
-F 0 "#PWR038" H 11550 13750 50  0001 C CNN
-F 1 "GND" H 11550 13850 50  0000 C CNN
-F 2 "" H 11550 14000 60  0000 C CNN
-F 3 "" H 11550 14000 60  0000 C CNN
-	1    11550 14000
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR039
-U 1 1 5D8534B9
-P 11850 14000
-F 0 "#PWR039" H 11850 13750 50  0001 C CNN
-F 1 "GND" H 11850 13850 50  0000 C CNN
-F 2 "" H 11850 14000 60  0000 C CNN
-F 3 "" H 11850 14000 60  0000 C CNN
-	1    11850 14000
-	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR041
 U 1 1 5D8536A6
-P 13450 14000
-F 0 "#PWR041" H 13450 13750 50  0001 C CNN
-F 1 "GND" H 13450 13850 50  0000 C CNN
-F 2 "" H 13450 14000 60  0000 C CNN
-F 3 "" H 13450 14000 60  0000 C CNN
-	1    13450 14000
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR040
-U 1 1 5D870C2E
-P 13150 10500
-F 0 "#PWR040" H 13150 10250 50  0001 C CNN
-F 1 "GND" H 13150 10350 50  0000 C CNN
-F 2 "" H 13150 10500 60  0000 C CNN
-F 3 "" H 13150 10500 60  0000 C CNN
-	1    13150 10500
+P 15650 14600
+F 0 "#PWR041" H 15650 14350 50  0001 C CNN
+F 1 "GND" H 15650 14450 50  0000 C CNN
+F 2 "" H 15650 14600 60  0000 C CNN
+F 3 "" H 15650 14600 60  0000 C CNN
+	1    15650 14600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13150 9600 13150 9200
-Connection ~ 13150 9600
+	9300 9500 9300 9400
+Connection ~ 9300 9500
 Wire Wire Line
 	4700 2450 4600 2450
 Connection ~ 4700 2450
@@ -3142,83 +1268,1396 @@ Text Label 4600 2950 2    50   ~ 0
 BATTERY_IN
 Text Notes 4250 2750 0    50   ~ 0
 The BQ27441-G1\ngoes between here
-Wire Wire Line
-	13700 12500 13700 12550
-Wire Wire Line
-	13700 12950 13700 13000
-Wire Wire Line
-	13250 13000 13700 13000
-Wire Wire Line
-	13250 13200 14050 13200
-Wire Wire Line
-	13250 13400 14050 13400
 $Comp
 L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0102
 U 1 1 5D89697D
-P 5150 12050
-F 0 "#PWR0102" H 5150 11900 50  0001 C CNN
-F 1 "+3.3V" H 5150 12200 50  0000 C CNN
-F 2 "" H 5150 12050 60  0000 C CNN
-F 3 "" H 5150 12050 60  0000 C CNN
-	1    5150 12050
+P 4550 8350
+F 0 "#PWR0102" H 4550 8200 50  0001 C CNN
+F 1 "+3.3V" H 4550 8500 50  0000 C CNN
+F 2 "" H 4550 8350 60  0000 C CNN
+F 3 "" H 4550 8350 60  0000 C CNN
+	1    4550 8350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 12150 5150 12050
 $Comp
 L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0104
 U 1 1 5D8B2AA3
-P 13950 8000
-F 0 "#PWR0104" H 13950 7850 50  0001 C CNN
-F 1 "+3.3V" H 13950 8150 50  0000 C CNN
-F 2 "" H 13950 8000 60  0000 C CNN
-F 3 "" H 13950 8000 60  0000 C CNN
-	1    13950 8000
-	0    1    1    0   
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0106
-U 1 1 5D8B4A49
-P 11250 12500
-F 0 "#PWR0106" H 11250 12350 50  0001 C CNN
-F 1 "+3.3V" H 11250 12650 50  0000 C CNN
-F 2 "" H 11250 12500 60  0000 C CNN
-F 3 "" H 11250 12500 60  0000 C CNN
-	1    11250 12500
-	1    0    0    -1  
-$EndComp
-$Comp
-L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0107
-U 1 1 5D8B5676
-P 11550 12500
-F 0 "#PWR0107" H 11550 12350 50  0001 C CNN
-F 1 "+3.3V" H 11550 12650 50  0000 C CNN
-F 2 "" H 11550 12500 60  0000 C CNN
-F 3 "" H 11550 12500 60  0000 C CNN
-	1    11550 12500
+P 9300 8850
+F 0 "#PWR0104" H 9300 8700 50  0001 C CNN
+F 1 "+3.3V" H 9300 9000 50  0000 C CNN
+F 2 "" H 9300 8850 60  0000 C CNN
+F 3 "" H 9300 8850 60  0000 C CNN
+	1    9300 8850
 	1    0    0    -1  
 $EndComp
 $Comp
 L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0108
 U 1 1 5D8B59A5
-P 13700 12500
-F 0 "#PWR0108" H 13700 12350 50  0001 C CNN
-F 1 "+3.3V" H 13700 12650 50  0000 C CNN
-F 2 "" H 13700 12500 60  0000 C CNN
-F 3 "" H 13700 12500 60  0000 C CNN
-	1    13700 12500
+P 17150 13750
+F 0 "#PWR0108" H 17150 13600 50  0001 C CNN
+F 1 "+3.3V" H 17150 13900 50  0000 C CNN
+F 2 "" H 17150 13750 60  0000 C CNN
+F 3 "" H 17150 13750 60  0000 C CNN
+	1    17150 13750
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	8500 2850 8500 5950
-Wire Bus Line
-	8100 2850 8100 7050
-Wire Bus Line
-	7300 7250 7300 10450
-Wire Bus Line
-	3700 7250 3700 10350
-Wire Bus Line
-	15500 2450 15500 5950
 Text Notes 22150 15350 0    50   ~ 10
 PENDING
+$Comp
+L Battery_Management:BQ27441-G1 U6
+U 1 1 5F25FA7C
+P 3700 9400
+F 0 "U6" H 3700 10067 50  0000 C CNN
+F 1 "BQ27441-G1" H 3700 9976 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PDSO-N12" H 3950 8850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq27441-g1.pdf" H 3900 9600 50  0001 C CNN
+	1    3700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 9800 3100 9800
+Wire Wire Line
+	2600 9500 3100 9500
+Wire Wire Line
+	2000 9600 3100 9600
+Wire Wire Line
+	1800 9000 2000 9000
+Wire Wire Line
+	2000 9500 2000 9000
+Connection ~ 2000 9500
+Connection ~ 2000 9000
+Wire Wire Line
+	2000 9000 3100 9000
+Text Label 2800 9200 0    50   ~ 0
+SDA
+Text Label 2800 9300 0    50   ~ 0
+SCL
+Wire Wire Line
+	4300 9400 4550 9400
+Connection ~ 4550 9400
+Wire Wire Line
+	4550 9400 4700 9400
+Wire Wire Line
+	4300 9100 4850 9100
+Wire Wire Line
+	4850 8550 4850 8750
+Wire Wire Line
+	3600 10000 3600 10200
+Wire Wire Line
+	3600 10200 3650 10200
+Wire Wire Line
+	3650 10200 3700 10200
+Wire Wire Line
+	3700 10200 3700 10000
+Connection ~ 3650 10200
+$Comp
+L Sensor:BME280 U7
+U 1 1 5F616C1C
+P 15750 13900
+F 0 "U7" H 15321 13946 50  0000 R CNN
+F 1 "BME280" H 16200 14400 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 17250 13450 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 15750 13700 50  0001 C CNN
+	1    15750 13900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 14200 17150 14200
+Wire Wire Line
+	16350 14000 16550 14000
+Wire Wire Line
+	16350 13800 16550 13800
+Wire Wire Line
+	15650 14500 15650 14600
+Wire Wire Line
+	15850 14500 15650 14500
+Connection ~ 15650 14500
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0106
+U 1 1 5F6B1DBB
+P 14850 13450
+F 0 "#PWR0106" H 14850 13200 50  0001 C CNN
+F 1 "GND" H 14850 13300 50  0000 C CNN
+F 2 "" H 14850 13450 60  0000 C CNN
+F 3 "" H 14850 13450 60  0000 C CNN
+	1    14850 13450
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0107
+U 1 1 5F6B4F9D
+P 14850 12800
+F 0 "#PWR0107" H 14850 12650 50  0001 C CNN
+F 1 "+3.3V" H 14850 12950 50  0000 C CNN
+F 2 "" H 14850 12800 60  0000 C CNN
+F 3 "" H 14850 12800 60  0000 C CNN
+	1    14850 12800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 12800 14850 13000
+Wire Wire Line
+	15850 13000 15850 13300
+Wire Wire Line
+	15650 13300 15650 13000
+Connection ~ 15650 13000
+Wire Wire Line
+	15650 13000 15850 13000
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0109
+U 1 1 5F744E58
+P 16950 13600
+F 0 "#PWR0109" H 16950 13350 50  0001 C CNN
+F 1 "GND" H 16950 13450 50  0000 C CNN
+F 2 "" H 16950 13600 60  0000 C CNN
+F 3 "" H 16950 13600 60  0000 C CNN
+	1    16950 13600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 13600 16950 13600
+$Comp
+L Interface_USB:CH340T U2
+U 1 1 5F7998BA
+P 4000 5450
+F 0 "U2" H 4000 4561 50  0000 C CNN
+F 1 "CH340T" H 4000 4470 50  0000 C CNN
+F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 4900 4650 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF" H 3750 6300 50  0001 C CNN
+	1    4000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0110
+U 1 1 5F7E030B
+P 3600 4550
+F 0 "#PWR0110" H 3600 4300 50  0001 C CNN
+F 1 "GND" V 3605 4377 50  0000 C CNN
+F 2 "" H 3600 4550 60  0000 C CNN
+F 3 "" H 3600 4550 60  0000 C CNN
+	1    3600 4550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	-150 6700 -150 4000
+Wire Wire Line
+	4400 4750 4650 4750
+Wire Wire Line
+	4400 4850 5000 4850
+Wire Wire Line
+	4800 5550 4400 5550
+Connection ~ 4800 5550
+Wire Wire Line
+	4900 5450 4400 5450
+Connection ~ 4900 5450
+Wire Wire Line
+	4900 5450 4900 5250
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0111
+U 1 1 5F95AC46
+P 3950 4150
+F 0 "#PWR0111" H 3950 4000 50  0001 C CNN
+F 1 "+3.3V" H 3950 4300 50  0000 C CNN
+F 2 "" H 3950 4150 60  0000 C CNN
+F 3 "" H 3950 4150 60  0000 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0112
+U 1 1 5F9D633C
+P 4400 4550
+F 0 "#PWR0112" H 4400 4300 50  0001 C CNN
+F 1 "GND" V 4405 4377 50  0000 C CNN
+F 2 "" H 4400 4550 60  0000 C CNN
+F 3 "" H 4400 4550 60  0000 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4150 3950 4200
+Connection ~ 3950 4300
+Wire Wire Line
+	3950 4300 4000 4300
+Wire Wire Line
+	3900 4300 3900 4550
+Wire Wire Line
+	3900 4300 3950 4300
+Wire Wire Line
+	4000 4300 4000 4550
+Wire Wire Line
+	4400 4550 4400 4500
+Wire Wire Line
+	3600 4550 3600 4500
+Wire Wire Line
+	4000 6550 4000 6250
+NoConn ~ 4400 5850
+NoConn ~ 4400 5750
+$Comp
+L Transistor_BJT:BC817 Q2
+U 1 1 5FD78344
+P 5600 5250
+F 0 "Q2" H 5791 5296 50  0000 L CNN
+F 1 "BC817" H 5791 5205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 5175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5600 5250 50  0001 L CNN
+	1    5600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q3
+U 1 1 5FD797E9
+P 5600 5950
+F 0 "Q3" H 5791 5904 50  0000 L CNN
+F 1 "BC817" H 5791 5995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 5875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5600 5950 50  0001 L CNN
+	1    5600 5950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2800 9200 3100 9200
+Wire Wire Line
+	2800 9300 3100 9300
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5FDEA588
+P 1350 5200
+F 0 "J1" H 1407 5667 50  0000 C CNN
+F 1 "USB_B_Micro" H 1407 5576 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1350 5200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 5400
+Wire Wire Line
+	1650 5000 1900 5000
+Wire Wire Line
+	1900 5000 1900 4550
+Wire Wire Line
+	1900 5150 1900 5300
+Wire Wire Line
+	1900 5300 1650 5300
+Wire Wire Line
+	1900 5150 3600 5150
+Wire Wire Line
+	1850 5200 1850 5050
+Wire Wire Line
+	1850 5050 3600 5050
+Wire Wire Line
+	1650 5200 1850 5200
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0113
+U 1 1 5FE78BA9
+P 1250 5750
+F 0 "#PWR0113" H 1250 5500 50  0001 C CNN
+F 1 "GND" H 1250 5600 50  0000 C CNN
+F 2 "" H 1250 5750 60  0000 C CNN
+F 3 "" H 1250 5750 60  0000 C CNN
+	1    1250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5600 1250 5650
+Wire Wire Line
+	1350 5600 1350 5650
+Wire Wire Line
+	1350 5650 1250 5650
+Connection ~ 1250 5650
+Wire Wire Line
+	1250 5650 1250 5750
+$Comp
+L Device:R R24
+U 1 1 5FEB3BE5
+P 11100 9350
+F 0 "R24" H 11170 9396 50  0000 L CNN
+F 1 "330" H 11170 9305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11030 9350 50  0001 C CNN
+F 3 "~" H 11100 9350 50  0001 C CNN
+	1    11100 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5FEB4F00
+P 10500 9350
+F 0 "R18" H 10570 9396 50  0000 L CNN
+F 1 "330" H 10570 9305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10430 9350 50  0001 C CNN
+F 3 "~" H 10500 9350 50  0001 C CNN
+	1    10500 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 9500 10500 9550
+Wire Wire Line
+	10500 9150 10500 9200
+Wire Wire Line
+	11100 9500 11100 9550
+$Comp
+L Device:R R21
+U 1 1 5FF5E945
+P 17150 14000
+F 0 "R21" H 17220 14046 50  0000 L CNN
+F 1 "4.7k" H 17220 13955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17080 14000 50  0001 C CNN
+F 3 "~" H 17150 14000 50  0001 C CNN
+	1    17150 14000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17150 13750 17150 13850
+Wire Wire Line
+	17150 14150 17150 14200
+$Comp
+L Device:R R15
+U 1 1 5FF93C7F
+P 2300 9500
+F 0 "R15" V 2093 9500 50  0000 C CNN
+F 1 "0.01/1%" V 2184 9500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2230 9500 50  0001 C CNN
+F 3 "~" H 2300 9500 50  0001 C CNN
+	1    2300 9500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 600515B5
+P 4550 8750
+F 0 "R17" H 4620 8796 50  0000 L CNN
+F 1 "4.7k" H 4620 8705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 8750 50  0001 C CNN
+F 3 "~" H 4550 8750 50  0001 C CNN
+	1    4550 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 8900 4550 9400
+Wire Wire Line
+	4550 8350 4550 8600
+$Comp
+L Device:R R16
+U 1 1 6007F64B
+P 2850 10000
+F 0 "R16" H 2920 10046 50  0000 L CNN
+F 1 "10k" H 2920 9955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2780 10000 50  0001 C CNN
+F 3 "~" H 2850 10000 50  0001 C CNN
+	1    2850 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 10150 2850 10250
+Wire Wire Line
+	2850 9850 2850 9800
+Wire Wire Line
+	2000 9500 2150 9500
+Wire Wire Line
+	2450 9500 2600 9500
+$Comp
+L Device:R R6
+U 1 1 6011D371
+P 4800 4750
+F 0 "R6" V 4593 4750 50  0000 C CNN
+F 1 "220" V 4684 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4730 4750 50  0001 C CNN
+F 3 "~" H 4800 4750 50  0001 C CNN
+	1    4800 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60124427
+P 5150 4850
+F 0 "R7" V 4943 4850 50  0000 C CNN
+F 1 "220" V 5034 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5080 4850 50  0001 C CNN
+F 3 "~" H 5150 4850 50  0001 C CNN
+	1    5150 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 4750 8000 4750
+$Comp
+L Device:R R8
+U 1 1 60160FF7
+P 5150 5250
+F 0 "R8" V 4943 5250 50  0000 C CNN
+F 1 "1k" V 5034 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5080 5250 50  0001 C CNN
+F 3 "~" H 5150 5250 50  0001 C CNN
+	1    5150 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 6016CA2B
+P 5150 5950
+F 0 "R9" V 4943 5950 50  0000 C CNN
+F 1 "1k" V 5034 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5080 5950 50  0001 C CNN
+F 3 "~" H 5150 5950 50  0001 C CNN
+	1    5150 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6016F657
+P 6050 6350
+F 0 "R10" V 5843 6350 50  0000 C CNN
+F 1 "220" V 5934 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5980 6350 50  0001 C CNN
+F 3 "~" H 6050 6350 50  0001 C CNN
+	1    6050 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60175119
+P 2200 3000
+F 0 "R2" H 2130 2954 50  0000 R CNN
+F 1 "10k" H 2130 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2130 3000 50  0001 C CNN
+F 3 "~" H 2200 3000 50  0001 C CNN
+	1    2200 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60176DFD
+P 1900 3000
+F 0 "R1" H 1830 2954 50  0000 R CNN
+F 1 "10k" H 1830 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1830 3000 50  0001 C CNN
+F 3 "~" H 1900 3000 50  0001 C CNN
+	1    1900 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6017ACB8
+P 2850 2350
+F 0 "R3" H 2920 2396 50  0000 L CNN
+F 1 "2.2k" H 2920 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2780 2350 50  0001 C CNN
+F 3 "~" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60181645
+P 2850 3250
+F 0 "R4" V 3057 3250 50  0000 C CNN
+F 1 "2.2k" V 2966 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2780 3250 50  0001 C CNN
+F 3 "~" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60189DFE
+P 4950 2450
+F 0 "R5" V 5157 2450 50  0000 C CNN
+F 1 "NA" V 5066 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4880 2450 50  0001 C CNN
+F 3 "~" H 4950 2450 50  0001 C CNN
+	1    4950 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 6018EB40
+P 7450 3100
+F 0 "R12" V 7350 3100 50  0000 C CNN
+F 1 "120k" V 7550 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7380 3100 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 6018E758
+P 7450 2750
+F 0 "R11" V 7550 2750 50  0000 C CNN
+F 1 "540k" V 7350 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7380 2750 50  0001 C CNN
+F 3 "~" H 7450 2750 50  0001 C CNN
+	1    7450 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 601E5378
+P 2500 2950
+F 0 "C1" H 2615 2996 50  0000 L CNN
+F 1 "47u/6.3V" H 2615 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2538 2800 50  0001 C CNN
+F 3 "~" H 2500 2950 50  0001 C CNN
+	1    2500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6021C5C6
+P 5400 3050
+F 0 "C6" H 5515 3096 50  0000 L CNN
+F 1 "10u/6.3V" H 5515 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5438 2900 50  0001 C CNN
+F 3 "~" H 5400 3050 50  0001 C CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6024FB80
+P 7750 2850
+F 0 "C7" H 7865 2896 50  0000 L CNN
+F 1 "10u/6.3V" H 7865 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7788 2700 50  0001 C CNN
+F 3 "~" H 7750 2850 50  0001 C CNN
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60288756
+P 3600 4350
+F 0 "C5" H 3715 4396 50  0000 L CNN
+F 1 "100n/50V" H 3715 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 4200 50  0001 C CNN
+F 3 "~" H 3600 4350 50  0001 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 602E73AF
+P 4400 4350
+F 0 "C4" H 4515 4396 50  0000 L CNN
+F 1 "22u/6.3V" H 4515 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4438 4200 50  0001 C CNN
+F 3 "~" H 4400 4350 50  0001 C CNN
+	1    4400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4200 3950 4200
+Connection ~ 3950 4200
+Wire Wire Line
+	3950 4200 3950 4300
+Wire Wire Line
+	4400 4200 3950 4200
+$Comp
+L Device:C C8
+U 1 1 60321A4D
+P 1800 9350
+F 0 "C8" H 1915 9396 50  0000 L CNN
+F 1 "1u/16V" H 1915 9305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1838 9200 50  0001 C CNN
+F 3 "~" H 1800 9350 50  0001 C CNN
+	1    1800 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 9500 1800 10100
+$Comp
+L Device:C C9
+U 1 1 603570DF
+P 4850 8900
+F 0 "C9" H 4965 8946 50  0000 L CNN
+F 1 "470n/50V" H 4965 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4888 8750 50  0001 C CNN
+F 3 "~" H 4850 8900 50  0001 C CNN
+	1    4850 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 9050 4850 9100
+$Comp
+L Device:C C10
+U 1 1 6038FE0A
+P 15300 13150
+F 0 "C10" H 15415 13196 50  0000 L CNN
+F 1 "100n/50V" H 15415 13105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15338 13000 50  0001 C CNN
+F 3 "~" H 15300 13150 50  0001 C CNN
+	1    15300 13150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 13000 15300 13000
+Wire Wire Line
+	15300 13000 15650 13000
+Connection ~ 15300 13000
+$Comp
+L Device:C C11
+U 1 1 603941B3
+P 14850 13150
+F 0 "C11" H 14965 13196 50  0000 L CNN
+F 1 "100n/50V" H 14965 13105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 14888 13000 50  0001 C CNN
+F 3 "~" H 14850 13150 50  0001 C CNN
+	1    14850 13150
+	1    0    0    -1  
+$EndComp
+Connection ~ 14850 13000
+Wire Wire Line
+	15300 13300 15300 13350
+Wire Wire Line
+	15300 13350 14850 13350
+Wire Wire Line
+	14850 13350 14850 13450
+Wire Wire Line
+	14850 13350 14850 13300
+Connection ~ 14850 13350
+$Comp
+L Device:C C2
+U 1 1 603EDA2B
+P 2600 5350
+F 0 "C2" V 2348 5350 50  0000 C CNN
+F 1 "27p/50V/C0G" V 2439 5350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2638 5200 50  0001 C CNN
+F 3 "~" H 2600 5350 50  0001 C CNN
+	1    2600 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 603F1DDE
+P 2600 5800
+F 0 "C3" V 2348 5800 50  0000 C CNN
+F 1 "27p/50V/C0G" V 2439 5800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2638 5650 50  0001 C CNN
+F 3 "~" H 2600 5800 50  0001 C CNN
+	1    2600 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 5550 2300 5800
+Wire Wire Line
+	2450 5800 2300 5800
+Connection ~ 2300 5800
+Wire Wire Line
+	2300 5800 2300 6050
+Wire Wire Line
+	2450 5350 2300 5350
+Wire Wire Line
+	3600 5550 3550 5550
+Wire Wire Line
+	3550 5550 3550 5800
+Wire Wire Line
+	3550 5800 3100 5800
+Wire Wire Line
+	3600 5350 3100 5350
+Wire Wire Line
+	3100 5350 3100 5450
+Connection ~ 3100 5350
+Wire Wire Line
+	3100 5350 2750 5350
+Wire Wire Line
+	3100 5650 3100 5800
+Connection ~ 3100 5800
+Wire Wire Line
+	3100 5800 2750 5800
+$Comp
+L Device:Crystal_GND2_Small Q1
+U 1 1 6050171D
+P 3100 5550
+F 0 "Q1" V 3054 5638 50  0000 L CNN
+F 1 "Q12MHz/20pF/10ppm/4P" V 3145 5638 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm_HandSoldering" H 3100 5550 50  0001 C CNN
+F 3 "~" H 3100 5550 50  0001 C CNN
+	1    3100 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push RST3
+U 1 1 6057BDC9
+P 8650 9150
+F 0 "RST3" V 8696 9102 50  0000 R CNN
+F 1 "SW_Push" V 8605 9102 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 8650 9350 50  0001 C CNN
+F 3 "~" H 8650 9350 50  0001 C CNN
+	1    8650 9150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push RST2
+U 1 1 605819AF
+P 9300 9200
+F 0 "RST2" V 9346 9152 50  0000 R CNN
+F 1 "SW_Push" V 9255 9152 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 9300 9400 50  0001 C CNN
+F 3 "~" H 9300 9400 50  0001 C CNN
+	1    9300 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 60583AAA
+P 10500 9000
+F 0 "D4" V 10539 8882 50  0000 R CNN
+F 1 "LED/Green" V 10448 8882 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10500 9000 50  0001 C CNN
+F 3 "~" H 10500 9000 50  0001 C CNN
+	1    10500 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 60584FED
+P 11100 9000
+F 0 "D6" V 11139 8882 50  0000 R CNN
+F 1 "LED/Green" V 11048 8882 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11100 9000 50  0001 C CNN
+F 3 "~" H 11100 9000 50  0001 C CNN
+	1    11100 9000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11100 9150 11100 9200
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6058AF33
+P 12650 1050
+F 0 "FID1" H 12735 1096 50  0000 L CNN
+F 1 "Fiducial" H 12735 1005 50  0000 L CNN
+F 2 "" H 12650 1050 50  0001 C CNN
+F 3 "~" H 12650 1050 50  0001 C CNN
+	1    12650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 6058B146
+P 13150 1050
+F 0 "FID2" H 13235 1096 50  0000 L CNN
+F 1 "Fiducial" H 13235 1005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13150 1050 50  0001 C CNN
+F 3 "~" H 13150 1050 50  0001 C CNN
+	1    13150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 6058B2D0
+P 13650 1050
+F 0 "FID3" H 13735 1096 50  0000 L CNN
+F 1 "Fiducial" H 13735 1005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13650 1050 50  0001 C CNN
+F 3 "~" H 13650 1050 50  0001 C CNN
+	1    13650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2200 2200 2850
+Wire Wire Line
+	2200 1550 2200 1900
+$Comp
+L Device:LED PWRLED1
+U 1 1 6059EB94
+P 2200 2050
+F 0 "PWRLED1" V 2239 1932 50  0000 R CNN
+F 1 "LED/Red" V 2148 1932 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 2050 50  0001 C CNN
+F 3 "~" H 2200 2050 50  0001 C CNN
+	1    2200 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 1850 2850 1850
+$Comp
+L Diode:1N5822 D1
+U 1 1 60615465
+P 1450 1550
+F 0 "D1" H 1450 1333 50  0000 C CNN
+F 1 "1N5822" H 1450 1424 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 1450 1375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 1450 1550 50  0001 C CNN
+	1    1450 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1550 1300 1550
+$Comp
+L Device:Q_PMOS_GSD FET1
+U 1 1 6061CAA4
+P 4950 1850
+F 0 "FET1" V 5199 1850 50  0000 C CNN
+F 1 "WPM2015-3/TR" V 5290 1850 50  0000 C CNN
+F 2 "" H 5150 1950 50  0001 C CNN
+F 3 "~" H 4950 1850 50  0001 C CNN
+	1    4950 1850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4700 2250 4700 1950
+Wire Wire Line
+	4700 1950 4750 1950
+Connection ~ 4700 2250
+Wire Wire Line
+	5200 1950 5150 1950
+Wire Wire Line
+	5200 1950 5200 2450
+Wire Wire Line
+	4950 1650 4950 1550
+Connection ~ 4950 1550
+Wire Wire Line
+	4950 1550 5200 1550
+$Comp
+L Diode:1N5822 D2
+U 1 1 60687DF7
+P 5400 2000
+F 0 "D2" V 5446 1920 50  0000 R CNN
+F 1 "1N5822" V 5355 1920 50  0000 R CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 5400 1825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5400 2000 50  0001 C CNN
+	1    5400 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male BAT1
+U 1 1 6068EFAB
+P 4900 2950
+F 0 "BAT1" H 4872 2924 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4872 2833 50  0000 R CNN
+F 2 "Connector_Wuerth:Wuerth_WR-WTB_64800211622_1x02_P1.50mm_Vertical" H 4900 2950 50  0001 C CNN
+F 3 "~" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:LTC4054ES5-4.2 U1
+U 1 1 60718E4F
+P 3400 2900
+F 0 "U1" H 3844 2896 50  0000 L CNN
+F 1 "LTC4054ES5-4.2" H 3500 2550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3400 2400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/405442xf.pdf" H 3400 2800 50  0001 C CNN
+F 4 "TME" H 3400 2900 50  0001 C CNN "Supplier"
+F 5 "LTC4054ES5-4.2TRMP" H 3400 2900 50  0001 C CNN "Part Nr."
+	1    3400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1850 2500 2600
+Wire Wire Line
+	2500 3100 2500 3300
+Wire Wire Line
+	3400 2600 2500 2600
+Connection ~ 2500 2600
+Wire Wire Line
+	2500 2600 2500 2800
+Wire Wire Line
+	3400 3300 2500 3300
+Connection ~ 2500 3300
+Wire Wire Line
+	2500 3300 2500 3450
+$Comp
+L Device:LED CHARGING1
+U 1 1 605D7059
+P 2850 2000
+F 0 "CHARGING1" V 2889 1882 50  0000 R CNN
+F 1 "LED/Yellow" V 2798 1882 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2850 2000 50  0001 C CNN
+F 3 "~" H 2850 2000 50  0001 C CNN
+	1    2850 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 2150 2850 2200
+Wire Wire Line
+	2850 2500 2850 2900
+Wire Wire Line
+	2850 2900 3000 2900
+Wire Wire Line
+	2850 3100 2850 3000
+Wire Wire Line
+	2850 3000 3000 3000
+Wire Wire Line
+	2850 3450 2850 3400
+Wire Wire Line
+	4000 2900 3800 2900
+Wire Wire Line
+	4000 2250 4000 2900
+$Comp
+L Regulator_Switching:PAM2305AABADJ U3
+U 1 1 608B809A
+P 6100 2550
+F 0 "U3" H 6100 2917 50  0000 C CNN
+F 1 "PAM2305AABADJ" H 6100 2826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 6150 2300 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/PAM2305.pdf" H 5850 2200 50  0001 C CNN
+F 4 "TME" H 6100 2550 50  0001 C CNN "Supplier"
+F 5 " PAM2305AABADJ" H 6100 2550 50  0001 C CNN "Part Nr."
+	1    6100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2650 5600 2650
+Wire Wire Line
+	5600 2650 5600 2450
+Connection ~ 5600 2450
+Wire Wire Line
+	5600 2450 5400 2450
+Wire Wire Line
+	6100 2950 6100 2850
+$Comp
+L Device:C C12
+U 1 1 6094AD1F
+P 7000 2750
+F 0 "C12" H 7115 2796 50  0000 L CNN
+F 1 "100p/6.3V" H 6550 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7038 2600 50  0001 C CNN
+F 3 "~" H 7000 2750 50  0001 C CNN
+	1    7000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3400 7450 3250
+Wire Wire Line
+	7450 2950 7450 2900
+Wire Wire Line
+	7450 2450 7450 2600
+Wire Wire Line
+	7200 2600 7200 2450
+Connection ~ 7200 2450
+Wire Wire Line
+	7200 2450 7450 2450
+Wire Wire Line
+	7000 2600 7200 2600
+Wire Wire Line
+	7450 2900 7000 2900
+Connection ~ 7450 2900
+Wire Wire Line
+	7000 2900 6500 2900
+Wire Wire Line
+	6500 2900 6500 2650
+Connection ~ 7000 2900
+Wire Wire Line
+	6500 2450 6750 2450
+Text Label 16550 14000 0    50   ~ 0
+SCL
+Text Label 16550 13800 0    50   ~ 0
+SDA
+Wire Wire Line
+	6200 6000 6200 6350
+Connection ~ 6200 6350
+Wire Wire Line
+	6200 6350 6500 6350
+Text Label 6250 6350 0    60   ~ 0
+D_Com
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR018
+U 1 1 580DBD62
+P 7450 8950
+F 0 "#PWR018" H 7450 8700 50  0001 C CNN
+F 1 "GND" H 7450 8800 50  0000 C CNN
+F 2 "" H 7450 8950 60  0000 C CNN
+F 3 "" H 7450 8950 60  0000 C CNN
+	1    7450 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 8750 7450 8950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C251A1
+P 7450 8750
+F 0 "TP?" H 7508 8868 50  0000 L CNN
+F 1 "GND" H 7508 8777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7650 8750 50  0001 C CNN
+F 3 "~" H 7650 8750 50  0001 C CNN
+	1    7450 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60BE0A41
+P 6200 6000
+F 0 "TP?" H 6258 6118 50  0000 L CNN
+F 1 "D_Com1" H 6258 6027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6400 6000 50  0001 C CNN
+F 3 "~" H 6400 6000 50  0001 C CNN
+	1    6200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR029
+U 1 1 58153B20
+P 10950 6950
+F 0 "#PWR029" H 10950 6700 50  0001 C CNN
+F 1 "GND" V 10955 6822 50  0000 R CNN
+F 2 "" H 10950 6950 60  0000 C CNN
+F 3 "" H 10950 6950 60  0000 C CNN
+	1    10950 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR028
+U 1 1 581571AB
+P 10100 3650
+F 0 "#PWR028" H 10100 3500 50  0001 C CNN
+F 1 "+3.3V" H 9975 3800 50  0000 L CNN
+F 2 "" H 10100 3650 60  0000 C CNN
+F 3 "" H 10100 3650 60  0000 C CNN
+	1    10100 3650
+	1    0    0    -1  
+$EndComp
+Text Label 11700 4900 0    60   ~ 0
+GPIO13
+Text Label 11700 5500 0    60   ~ 0
+GPIO19
+Text Label 11700 5700 0    60   ~ 0
+GPIO22
+Text Label 11700 5600 0    60   ~ 0
+GPIO21
+Text Label 11700 5900 0    60   ~ 0
+GPIO25
+Text Label 9450 5700 0    60   ~ 0
+GPIO10/SD_DATA3
+Text Label 11700 4300 0    60   ~ 0
+GPIO1/U0TXD
+Text Label 11700 4500 0    60   ~ 0
+GPIO3/U0RXD
+Text Label 11700 5400 0    60   ~ 0
+GPIO18
+Text Label 9450 5900 0    60   ~ 0
+GPIO11/SD_CMD
+Text Label 9450 5600 0    60   ~ 0
+GPIO9/SD_DATA2
+Text Label 9450 5500 0    60   ~ 0
+GPIO8/SD_DATA1
+Text Label 11700 4400 0    60   ~ 0
+GPIO2
+Text Label 11700 4200 0    60   ~ 0
+GPIO0
+Text Label 11700 5100 0    60   ~ 0
+GPIO15
+Text Label 11700 5200 0    60   ~ 0
+GPIO16
+Text Label 11700 5000 0    60   ~ 0
+GPIO14
+Text Label 11700 5800 0    60   ~ 0
+GPIO23
+Text Label 9450 4200 0    60   ~ 0
+ESP_EN
+Text Label 11700 6400 0    60   ~ 0
+GPI34
+Text Label 11700 6200 0    60   ~ 0
+GPIO32
+Text Label 11700 6300 0    60   ~ 0
+GPIO33
+Text Label 11700 5300 0    60   ~ 0
+GPIO17
+Text Label 11700 6500 0    60   ~ 0
+GPI35
+Text Label 9450 4500 0    60   ~ 0
+GPI39/SENSOR_VN
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR031
+U 1 1 58DC2D7F
+P 11700 3600
+F 0 "#PWR031" H 11700 3450 50  0001 C CNN
+F 1 "+3.3V" V 11700 3700 50  0000 L CNN
+F 2 "" H 11700 3600 60  0000 C CNN
+F 3 "" H 11700 3600 60  0000 C CNN
+	1    11700 3600
+	1    0    0    -1  
+$EndComp
+Text Label 11700 4700 0    60   ~ 0
+GPIO5
+Text Label 11700 4800 0    60   ~ 0
+GPIO12
+Text Label 9450 4400 0    60   ~ 0
+GPI36/SENSOR_VP
+Text Label 11700 4600 0    60   ~ 0
+GPIO4
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR027
+U 1 1 5815346C
+P 10950 3650
+F 0 "#PWR027" H 10950 3500 50  0001 C CNN
+F 1 "+3.3V" H 10950 3800 50  0000 C CNN
+F 2 "" H 10950 3650 60  0000 C CNN
+F 3 "" H 10950 3650 60  0000 C CNN
+	1    10950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U5
+U 1 1 5EC9AB2D
+P 10950 5400
+F 0 "U5" H 10950 6981 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 10950 6890 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 10950 3900 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 10650 5450 50  0001 C CNN
+	1    10950 5400
+	1    0    0    -1  
+$EndComp
+Text Label 9450 5400 0    60   ~ 0
+GPIO7/SD_DATA0
+Text Label 9450 5800 0    60   ~ 0
+GPIO6/SD_CLK
+Wire Wire Line
+	9450 4200 10100 4200
+Wire Wire Line
+	10100 4100 10100 4200
+Connection ~ 10100 4200
+Wire Wire Line
+	10100 4200 10350 4200
+Wire Wire Line
+	10100 3650 10100 3800
+Wire Wire Line
+	10950 4000 10950 3650
+Wire Wire Line
+	11700 4000 11700 4200
+Wire Wire Line
+	11700 4200 11550 4200
+Wire Wire Line
+	11700 3700 11700 3600
+Wire Wire Line
+	9450 5400 10350 5400
+Wire Wire Line
+	9450 5500 10350 5500
+Wire Wire Line
+	9450 5600 10350 5600
+Wire Wire Line
+	9450 5700 10350 5700
+Wire Wire Line
+	9450 5800 10350 5800
+Wire Wire Line
+	9450 5900 10350 5900
+Wire Wire Line
+	11550 4300 11700 4300
+Wire Wire Line
+	11550 4400 11700 4400
+Wire Wire Line
+	11550 4500 11700 4500
+Wire Wire Line
+	11550 4600 11700 4600
+Wire Wire Line
+	11550 4700 11700 4700
+Wire Wire Line
+	11550 4800 11700 4800
+Wire Wire Line
+	11550 4900 11700 4900
+Wire Wire Line
+	11550 5000 11700 5000
+Wire Wire Line
+	11550 5100 11700 5100
+Wire Wire Line
+	11550 5200 11700 5200
+Wire Wire Line
+	11550 5300 11700 5300
+Wire Wire Line
+	11550 5400 11700 5400
+Wire Wire Line
+	11550 5500 11700 5500
+Wire Wire Line
+	11550 5600 11700 5600
+Wire Wire Line
+	11550 5700 11700 5700
+Wire Wire Line
+	11550 5800 11700 5800
+Wire Wire Line
+	11550 5900 11700 5900
+Wire Wire Line
+	11550 6200 11700 6200
+Wire Wire Line
+	11550 6300 11700 6300
+Wire Wire Line
+	11550 6400 11700 6400
+Wire Wire Line
+	11550 6500 11700 6500
+Wire Wire Line
+	10950 6800 10950 6950
+$Comp
+L Device:R R13
+U 1 1 601D46A4
+P 10100 3950
+F 0 "R13" H 10170 3996 50  0000 L CNN
+F 1 "1k" H 10170 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10030 3950 50  0001 C CNN
+F 3 "~" H 10100 3950 50  0001 C CNN
+	1    10100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 601D7C2B
+P 11700 3850
+F 0 "R14" H 11770 3896 50  0000 L CNN
+F 1 "NA" H 11770 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11630 3850 50  0001 C CNN
+F 3 "~" H 11700 3850 50  0001 C CNN
+	1    11700 3850
+	1    0    0    -1  
+$EndComp
+Text Label 12500 6100 0    50   ~ 0
+SDA
+Text Label 12550 6000 0    50   ~ 0
+SCL
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60CD4ADD
+P 7450 9850
+F 0 "TP?" H 7392 9876 50  0000 R CNN
+F 1 "5V" H 7392 9967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7650 9850 50  0001 C CNN
+F 3 "~" H 7650 9850 50  0001 C CNN
+	1    7450 9850
+	-1   0    0    1   
+$EndComp
+$Comp
+L hm-env-sensor-rescue:+5V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+U 1 1 60CF9F9E
+P 7450 9700
+F 0 "#PWR?" H 7450 9550 50  0001 C CNN
+F 1 "+5V" H 7450 9840 50  0000 C CNN
+F 2 "" H 7450 9700 60  0000 C CNN
+F 3 "" H 7450 9700 60  0000 C CNN
+	1    7450 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 9500 9300 9650
+$Comp
+L Device:R R26
+U 1 1 5FF2695E
+P 9300 9800
+F 0 "R26" H 9370 9846 50  0000 L CNN
+F 1 "10k" H 9370 9755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9230 9800 50  0001 C CNN
+F 3 "~" H 9300 9800 50  0001 C CNN
+	1    9300 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:GND-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR040
+U 1 1 5D870C2E
+P 9300 10000
+F 0 "#PWR040" H 9300 9750 50  0001 C CNN
+F 1 "GND" H 9300 9850 50  0000 C CNN
+F 2 "" H 9300 10000 60  0000 C CNN
+F 3 "" H 9300 10000 60  0000 C CNN
+	1    9300 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 9950 9300 10000
+Wire Wire Line
+	7450 9850 7450 9700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6106C8D0
+P 7700 9850
+F 0 "TP?" H 7642 9876 50  0000 R CNN
+F 1 "3.3V" H 7642 9967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7900 9850 50  0001 C CNN
+F 3 "~" H 7900 9850 50  0001 C CNN
+	1    7700 9850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 9850 7700 9700
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR?
+U 1 1 6107D287
+P 7700 9700
+F 0 "#PWR?" H 7700 9550 50  0001 C CNN
+F 1 "+3.3V" H 7700 9850 50  0000 C CNN
+F 2 "" H 7700 9700 60  0000 C CNN
+F 3 "" H 7700 9700 60  0000 C CNN
+	1    7700 9700
+	1    0    0    -1  
+$EndComp
+Connection ~ 12100 6000
+Wire Wire Line
+	11550 6000 12100 6000
+Wire Wire Line
+	11550 6100 12450 6100
+Wire Wire Line
+	12450 6100 12550 6100
+Connection ~ 12450 6100
+Wire Wire Line
+	12100 6000 12550 6000
+Wire Wire Line
+	12250 5300 12450 5300
+Connection ~ 12250 5300
+Wire Wire Line
+	12250 5300 12250 4950
+Wire Wire Line
+	12100 5300 12250 5300
+Wire Wire Line
+	12450 5600 12450 6100
+Wire Wire Line
+	12100 5600 12100 6000
+$Comp
+L Device:R R20
+U 1 1 5FF97C04
+P 12450 5450
+F 0 "R20" H 12520 5496 50  0000 L CNN
+F 1 "4.7k" H 12520 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12380 5450 50  0001 C CNN
+F 3 "~" H 12450 5450 50  0001 C CNN
+	1    12450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FF97764
+P 12100 5450
+F 0 "R19" H 12170 5496 50  0000 L CNN
+F 1 "4.7k" H 12170 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12030 5450 50  0001 C CNN
+F 3 "~" H 12100 5450 50  0001 C CNN
+	1    12100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L hm-env-sensor-rescue:+3.3V-OLIMEX_Power-ESP32-DevKit-Lipo_Rev_A1-rescue #PWR0114
+U 1 1 5FF96E2A
+P 12250 4950
+F 0 "#PWR0114" H 12250 4800 50  0001 C CNN
+F 1 "+3.3V" H 12250 5100 50  0000 C CNN
+F 2 "" H 12250 4950 60  0000 C CNN
+F 3 "" H 12250 4950 60  0000 C CNN
+	1    12250 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 12700 5500 0    40   ~ 0
+Pullup resistors to 3.3V for I2C bus
+Text Notes 6850 6300 0    50   ~ 0
+The ESP32 will enter the serial bootloader \nwhen GPIO0 is held low on reset. \nOtherwise it will run the program in flash.
+Text Notes 6850 6850 0    50   ~ 0
+GPIO2 must also be either left unconnected/floating, \nor driven Low, in order to enter the serial bootloader.
+$Comp
+L Diode:BAT54C D?
+U 1 1 610EF9BA
+P 6700 6350
+F 0 "D?" V 6654 6438 50  0000 L CNN
+F 1 "BAT54C" V 6745 6438 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6775 6475 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6620 6350 50  0001 C CNN
+	1    6700 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 6110BA6E
+P 6900 2450
+F 0 "L1" V 7090 2450 50  0000 C CNN
+F 1 "4.7uH/1.4A/DCR<0.1R/CD32" V 6999 2450 50  0000 C CNN
+F 2 "" H 6900 2450 50  0001 C CNN
+F 3 "~" H 6900 2450 50  0001 C CNN
+	1    6900 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 2450 7200 2450
 $EndSCHEMATC
